@@ -1,0 +1,202 @@
+{
+  "properties": {
+    "artifact_version": {
+      "default": "0.1.0",
+      "title": "Artifact Version",
+      "type": "string"
+    },
+    "security_notice": {
+      "default": "SANDBOX / PROTOTYPE ONLY \u2014 NOT RED TEAM CERTIFIED. Manual prompt-injection hardening only. Do not treat any certificate, artifact, report, or execution record as a hardened security boundary or production-grade validation guarantee.",
+      "title": "Security Notice",
+      "type": "string"
+    },
+    "sandbox_only": {
+      "default": true,
+      "title": "Sandbox Only",
+      "type": "boolean"
+    },
+    "red_team_certified": {
+      "default": false,
+      "title": "Red Team Certified",
+      "type": "boolean"
+    },
+    "prompt_injection_protection": {
+      "default": "manual-only",
+      "title": "Prompt Injection Protection",
+      "type": "string"
+    },
+    "project_root": {
+      "title": "Project Root",
+      "type": "string"
+    },
+    "repo_url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Repo Url"
+    },
+    "release_channel": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": "stable",
+      "title": "Release Channel"
+    },
+    "release_tag": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Release Tag"
+    },
+    "release_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Release Commit"
+    },
+    "runtime_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Runtime Commit"
+    },
+    "source_tree_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Tree Hash"
+    },
+    "release_manifest_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Release Manifest Hash"
+    },
+    "repo_matches_release": {
+      "default": false,
+      "title": "Repo Matches Release",
+      "type": "boolean"
+    },
+    "working_tree_clean": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Working Tree Clean"
+    },
+    "git_repo_present": {
+      "default": false,
+      "title": "Git Repo Present",
+      "type": "boolean"
+    },
+    "branch": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Branch"
+    },
+    "file_count": {
+      "default": 0,
+      "title": "File Count",
+      "type": "integer"
+    },
+    "container_digest": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Container Digest"
+    },
+    "build_command": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Build Command"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    },
+    "external_audit_present": {
+      "default": false,
+      "title": "External Audit Present",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "project_root"
+  ],
+  "title": "BuildProvenanceArtifact",
+  "type": "object"
+}

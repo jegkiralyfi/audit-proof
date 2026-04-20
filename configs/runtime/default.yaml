@@ -1,0 +1,23 @@
+app_name: audit-proof
+mode: development
+storage_backend: local
+llm_provider: heuristic
+llm_model: heuristic-evidence-v1
+llm_base_url: null
+llm_api_key_env: OPENAI_API_KEY
+llm_timeout_seconds: 30
+llm_max_output_tokens: 700
+llm_anthropic_version: 2023-06-01
+signing_enabled: false
+
+plugin_autodiscovery: true
+plugin_modules: []
+
+execution_stub_enabled: true
+execution_stub_timeout_seconds: 5
+
+repository_metadata_fetch_enabled: false
+repository_metadata_timeout_seconds: 5
+
+reference_resolution_fetch_enabled: false
+reference_resolution_timeout_seconds: 5

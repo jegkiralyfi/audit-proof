@@ -1,0 +1,9 @@
+Title: Effect but no inferential stat
+Methods
+Participants (N = 61) were assigned to control and intervention groups.
+Results
+Cohen's d = 0.44 was observed.
+Discussion
+These findings suggest a possible effect.
+References
+Doe, J. (2014). Example. https://doi.org/10.1000/example21

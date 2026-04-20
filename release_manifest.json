@@ -1,0 +1,1453 @@
+{
+  "manifest_version": "0.1.0",
+  "generated_at": "2026-04-16T10:11:03.761664+00:00",
+  "project_root": "/mnt/data/ap_v06_work/audit-proof-poc-v0.5.0-rc2",
+  "repo_url": null,
+  "release_channel": "stable",
+  "release_tag": null,
+  "release_commit": null,
+  "source_tree_hash": "sha256:c52e939ceefb8267e10427cf7fcc4649548a5289dc19132386bc8c5a0aef1ccc",
+  "file_count": 288,
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "sha256:00038dad82ebb09131466758316fd9405ba23af9ac7e77537e7a0656b3917a18",
+      "size_bytes": 191
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "sha256:820a34ee2f1fb2a7650263f036bcac62b8823bcb1a2869dfdce2d8d01c6e0e3d",
+      "size_bytes": 316
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "sha256:da718e91274d4138027949749b4358f8b95a169e1c5bdfa84c9beda2be7b3af5",
+      "size_bytes": 1820
+    },
+    {
+      "path": "CONTINUATION_NOTE_v0.4.4.md",
+      "sha256": "sha256:ea0bd3cd8075ed3a6a2459c5f693e2a68d62cce6ee5797fdd79d55418aa8aa15",
+      "size_bytes": 2060
+    },
+    {
+      "path": "CONTINUATION_NOTE_v0.4.5.md",
+      "sha256": "sha256:e99728f30aae023a0bd0d3af410c3d4cba12447ad8d7b0e797d1bc81c9ec227b",
+      "size_bytes": 1736
+    },
+    {
+      "path": "CONTINUATION_NOTE_v0.4.6.md",
+      "sha256": "sha256:2c3d78ec08ac8607f2e37935c86ea5c3e228cc402c38dcb1e5ec41fb94e33b31",
+      "size_bytes": 783
+    },
+    {
+      "path": "CONTINUATION_NOTE_v0.4.7.md",
+      "sha256": "sha256:a18be160425383f84c4d3ff8840e51aa9a5d64f50a6e3a43d66a4290575ffd67",
+      "size_bytes": 389
+    },
+    {
+      "path": "CONTINUATION_NOTE_v0.5.0-rc2.md",
+      "sha256": "sha256:d0804c680565ed863b4ff84f439209935979d432d5789ab77f2459cb32138c82",
+      "size_bytes": 2180
+    },
+    {
+      "path": "CONTINUATION_NOTE_v0.6.0-alpha1.md",
+      "sha256": "sha256:1cc6b82a233548b8da505bf232e2d745fe5c568f1603439534d1d69801c213f3",
+      "size_bytes": 1171
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "sha256:76f602b1dfc2d548fa1f5eddf29315c947bec31f71c95d49653927204486be39",
+      "size_bytes": 4
+    },
+    {
+      "path": "Makefile",
+      "sha256": "sha256:56e763bab93688f5f810430066fc70794661e7a02ae6c2901172cc82a7fd1541",
+      "size_bytes": 118
+    },
+    {
+      "path": "README.md",
+      "sha256": "sha256:20e6198c7a4a54b432ab8474c8429fe661e97ecc350b39b21f4eb285a3f815aa",
+      "size_bytes": 18641
+    },
+    {
+      "path": "RELEASE_NOTE_v0.5.0-rc2.md",
+      "sha256": "sha256:e3621c6739b4d3094c43af0586e55a241f5f8ea722c1eae04015bbe8f52de988",
+      "size_bytes": 6229
+    },
+    {
+      "path": "RELEASE_NOTE_v0.6.0-alpha1.md",
+      "sha256": "sha256:cd9a5200a29a3f2de4d8f2ebe9a6b53d30d206ffe6ff1aa00e99c93d81e659c5",
+      "size_bytes": 2749
+    },
+    {
+      "path": "apps/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/api/README.md",
+      "sha256": "sha256:a6cf95fcc845a18069ab9ee84296daa3fe8405ced81eed02072c34141df64225",
+      "size_bytes": 78
+    },
+    {
+      "path": "apps/api/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/api/deps.py",
+      "sha256": "sha256:50496d424c14b5fc450f71ff20d58089c5b3194742d91a38e5a12d4f18aa9c43",
+      "size_bytes": 37
+    },
+    {
+      "path": "apps/api/main.py",
+      "sha256": "sha256:0611da08dcabc52f26ffa850013f6890b00223c5047d65b8c11a7916d658ffbc",
+      "size_bytes": 986
+    },
+    {
+      "path": "apps/api/routes/__init__.py",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "apps/api/routes/certificates.py",
+      "sha256": "sha256:238745b56dc3a8afae9d590bc94c8122b448152a26337b3e1bb639309ab53ddb",
+      "size_bytes": 773
+    },
+    {
+      "path": "apps/api/routes/health.py",
+      "sha256": "sha256:bc90068456344f422a9aee2896f2acc682bdbd5928c20a3c2270beea501b451e",
+      "size_bytes": 152
+    },
+    {
+      "path": "apps/api/routes/intake.py",
+      "sha256": "sha256:0f987140021c1ecdbe28147ed39b2a9f31e7b4da2eb7417a3728c0f809623a16",
+      "size_bytes": 4659
+    },
+    {
+      "path": "apps/api/routes/jobs.py",
+      "sha256": "sha256:c90c9648fd1fe6afb99e76337a08331dff2b52aa0cbe0482fe275973f51c50b8",
+      "size_bytes": 160
+    },
+    {
+      "path": "apps/api/routes/metadata.py",
+      "sha256": "sha256:8e1b59b7456998e1da191434328211950822f32d32294d4a0b602932a72be79c",
+      "size_bytes": 437
+    },
+    {
+      "path": "apps/api/routes/registry.py",
+      "sha256": "sha256:a7a9ba5ffbab1723d3cabb88a4dfea54e8c6821d2528848368a8f083fe6b6ca3",
+      "size_bytes": 1467
+    },
+    {
+      "path": "apps/api/routes/reports.py",
+      "sha256": "sha256:b2c44c40621e6b967793ec0c7884c49d80528f2eff6bda674974ae87c748f12c",
+      "size_bytes": 6191
+    },
+    {
+      "path": "apps/api/routes/verify.py",
+      "sha256": "sha256:ed93924b620730fe99a392c8367b62dd2d9e114dcb3c900d27b45a54d7ed7488",
+      "size_bytes": 2382
+    },
+    {
+      "path": "apps/web/README.md",
+      "sha256": "sha256:92b970d64ae171f7e93fa9a39ea75a7a462e3ce6681a1daf42581a6fc9f781a7",
+      "size_bytes": 79
+    },
+    {
+      "path": "apps/web/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/web/app.py",
+      "sha256": "sha256:34ea2c37de783ca7d6f0a0c72135cf415455dd22e4fc320520d2850a7a042fcf",
+      "size_bytes": 12727
+    },
+    {
+      "path": "apps/web/assets/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/worker/README.md",
+      "sha256": "sha256:2827818c8bfdf4ba342c6e08189d607bc7a90488fc8ba1cf986af89aa02201e0",
+      "size_bytes": 82
+    },
+    {
+      "path": "apps/worker/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/worker/tasks/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/worker/tasks/build_certificate.py",
+      "sha256": "sha256:48cb242434a8ffa9a39ed5de3c1075f048be9e07700cb6686da44b5f934c27fc",
+      "size_bytes": 24
+    },
+    {
+      "path": "apps/worker/tasks/fetch_metadata.py",
+      "sha256": "sha256:48cb242434a8ffa9a39ed5de3c1075f048be9e07700cb6686da44b5f934c27fc",
+      "size_bytes": 24
+    },
+    {
+      "path": "apps/worker/tasks/parse_pdf.py",
+      "sha256": "sha256:48cb242434a8ffa9a39ed5de3c1075f048be9e07700cb6686da44b5f934c27fc",
+      "size_bytes": 24
+    },
+    {
+      "path": "apps/worker/tasks/run_checks.py",
+      "sha256": "sha256:48cb242434a8ffa9a39ed5de3c1075f048be9e07700cb6686da44b5f934c27fc",
+      "size_bytes": 24
+    },
+    {
+      "path": "apps/worker/tasks/sign_artifacts.py",
+      "sha256": "sha256:48cb242434a8ffa9a39ed5de3c1075f048be9e07700cb6686da44b5f934c27fc",
+      "size_bytes": 24
+    },
+    {
+      "path": "apps/worker/worker.py",
+      "sha256": "sha256:50afccccffc7c698353236b9d628da50ef69c4d13915ef57d43349529c834aaa",
+      "size_bytes": 26
+    },
+    {
+      "path": "configs/policies/computational.yaml",
+      "sha256": "sha256:5daf1e1d388494ec8a049d4de15038f225894ff5a5d1b9983ebdb6cc2665d2ce",
+      "size_bytes": 6320
+    },
+    {
+      "path": "configs/policies/formal_proof.yaml",
+      "sha256": "sha256:ed30ddb355f637ec609e508e399dbaa9f8269af90cc9d3ca22ceb66fed751428",
+      "size_bytes": 5191
+    },
+    {
+      "path": "configs/policies/quant_experimental.yaml",
+      "sha256": "sha256:9cdae79f27d5d19baa4b0cc5d850ae080f8f7877889edb6a22542f6429cb8804",
+      "size_bytes": 6514
+    },
+    {
+      "path": "configs/prompts/README.md",
+      "sha256": "sha256:ee9c074f6e6ca21b8be7846a44e07391f2636c3252b15e39cdf31931d81598c0",
+      "size_bytes": 124
+    },
+    {
+      "path": "configs/runtime/default.yaml",
+      "sha256": "sha256:b0cfbbba7f415aa58ccd5fc2396c88157a2b056fac00f918a436032cda496c3f",
+      "size_bytes": 554
+    },
+    {
+      "path": "docker-compose.yml",
+      "sha256": "sha256:1f1719a9b7365cefee894e8ba3011e1eb213f2abbb99442abb8d97f401aa00b2",
+      "size_bytes": 82
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "sha256:f8bd25ef3a3c8275dc0cf21f234defaf5ccd48c45e428c9337d623623457fef3",
+      "size_bytes": 9633
+    },
+    {
+      "path": "docs/certificate_spec.md",
+      "sha256": "sha256:25bd8d799c6efdbdd360dd9f7c987d4479a4dc11a53c32a5b210defc05aff4d4",
+      "size_bytes": 4919
+    },
+    {
+      "path": "docs/demo_walkthrough.md",
+      "sha256": "sha256:302113fe0f87dd0b92df95f6af465d689447fdcb66fa0f07fb190b971f963502",
+      "size_bytes": 233
+    },
+    {
+      "path": "docs/domain_policies/computational.md",
+      "sha256": "sha256:d0937cc80ae72c41ca3783e9bb976f090da38615f5b0784b3d1b19d01f3222b3",
+      "size_bytes": 76
+    },
+    {
+      "path": "docs/domain_policies/formal_proof.md",
+      "sha256": "sha256:57ac811296bea8254862c0a417fb3813a2df76bc86dfaae6266e28b85159094e",
+      "size_bytes": 1204
+    },
+    {
+      "path": "docs/domain_policies/quant_experimental.md",
+      "sha256": "sha256:72843d9e5ca21bbb5a1edc3c02eade40f05471709692ee7e4451f51bb9f30351",
+      "size_bytes": 584
+    },
+    {
+      "path": "docs/limitations.md",
+      "sha256": "sha256:60b1631ecb691fc950feeaf5115520e7b781255452279287867ed56a89b98ecf",
+      "size_bytes": 315
+    },
+    {
+      "path": "docs/manuals/core/evaluation.md",
+      "sha256": "sha256:e13de58cf34f2c0acc5e23ea8473f29f21b59e8b2a87419770cad9a059fcacbf",
+      "size_bytes": 2149
+    },
+    {
+      "path": "docs/manuals/core/external-calibration-note.md",
+      "sha256": "sha256:fa3d47fb83e1620de79b0812a7c59c75e3657212be5b44194408ae8c323b44c9",
+      "size_bytes": 3040
+    },
+    {
+      "path": "docs/manuals/core/formal-proof-semantic-closure.md",
+      "sha256": "sha256:2a3ab574e1fc9ae468f70ac9b2ebec076496ffd9b4a83f8ca25e7cfcdbee930e",
+      "size_bytes": 2890
+    },
+    {
+      "path": "docs/manuals/core/prompting-contract.md",
+      "sha256": "sha256:b982314bde010e2c57f2c9fbf25ab1e44fd0d52de7fb1d7456d925196c9cad94",
+      "size_bytes": 482
+    },
+    {
+      "path": "docs/manuals/core/provider-contract.md",
+      "sha256": "sha256:a07bfa144478c8d8c31101e3a185c5f6513b9b0b6793ab0d0db10ecccb32a2e9",
+      "size_bytes": 672
+    },
+    {
+      "path": "docs/manuals/core/real-paper-evaluation.md",
+      "sha256": "sha256:7ec282830c2665be364c9f55ef612db052026430b7a5c4cda3ce100bd112dc8a",
+      "size_bytes": 1170
+    },
+    {
+      "path": "docs/manuals/core/release-discipline.md",
+      "sha256": "sha256:375ab62c20882b10cad66444ee3ab35868670a1d8ca1ab1a50c2092e7ba645fb",
+      "size_bytes": 6983
+    },
+    {
+      "path": "docs/manuals/core/safety-note.md",
+      "sha256": "sha256:e737995b652da88da17189c6df2815a058199339bb6a7efb945d5f74bdc724aa",
+      "size_bytes": 360
+    },
+    {
+      "path": "docs/manuals/core/transparency-log.md",
+      "sha256": "sha256:a6acaa9f6f24a033334fa0a68ecb863844a607efad717ebc637032e241f1b9d3",
+      "size_bytes": 3008
+    },
+    {
+      "path": "docs/manuals/core/witness-log.md",
+      "sha256": "sha256:36ef5953943fda8d9406b104430c4206c94d373770588dd0940b73fa94f3fe13",
+      "size_bytes": 1479
+    },
+    {
+      "path": "docs/manuals/providers/anthropic.md",
+      "sha256": "sha256:941391ae105e36470946e3f40d9275152aacf248d165a88cac14dd38fa427992",
+      "size_bytes": 381
+    },
+    {
+      "path": "docs/manuals/providers/custom-provider.md",
+      "sha256": "sha256:195e08146b8de0cb58fc65dbda546fabac1589aca94ce5b1110ff74c1ef2fa2a",
+      "size_bytes": 343
+    },
+    {
+      "path": "docs/manuals/providers/gemini.md",
+      "sha256": "sha256:2052dfa0d079fb4077eb7425ca06d73f721a2dd3a1ea7e76a942b0e70cc86714",
+      "size_bytes": 494
+    },
+    {
+      "path": "docs/manuals/providers/heuristic.md",
+      "sha256": "sha256:a35d1056d7d19de9e95c5b9c4d22411dfe23ff15ac80436a158038c27b7dca72",
+      "size_bytes": 218
+    },
+    {
+      "path": "docs/manuals/providers/llama-cpp.md",
+      "sha256": "sha256:d4cf6c2c94294a2f7f2c11c89a4bec0f839777a86baeff2d48dbf31ee1f78794",
+      "size_bytes": 273
+    },
+    {
+      "path": "docs/manuals/providers/openai-compatible.md",
+      "sha256": "sha256:badd7b44a1ea85aa2a54d89bc5d3cd13066a16f2bd31a21fc5217ceab38ef2b9",
+      "size_bytes": 302
+    },
+    {
+      "path": "docs/manuals/providers/tgi.md",
+      "sha256": "sha256:ff22d54a5c67fb6c42132f466593426cd27914d5a33914e1c62a6316a6e513e4",
+      "size_bytes": 300
+    },
+    {
+      "path": "docs/manuals/providers/vllm.md",
+      "sha256": "sha256:d8e61a8f8cda964d1d9157d5ab24eeb8a95a8b47eed683460eae084dcdfb378e",
+      "size_bytes": 294
+    },
+    {
+      "path": "docs/plugin_example.md",
+      "sha256": "sha256:0295ce30960df7cd434081c11f647b9435234e78b5f6703f9e9254e16700dd9e",
+      "size_bytes": 608
+    },
+    {
+      "path": "docs/registry.md",
+      "sha256": "sha256:4787f1ccb7067b90a1784f60ec2c7cfd662460bc7fdced7b1afea66311dc9df4",
+      "size_bytes": 2401
+    },
+    {
+      "path": "docs/roadmap.md",
+      "sha256": "sha256:e9c2b773176bc0f131a691d950e8f360cd8bd77701a896ccc7981759e767d886",
+      "size_bytes": 428
+    },
+    {
+      "path": "docs/threat_model.md",
+      "sha256": "sha256:863c6f0a42fe4f3f9584dfffd4d785d60538ce67416e1fd632d4a277985d46c7",
+      "size_bytes": 514
+    },
+    {
+      "path": "examples/computational_paper_01.txt",
+      "sha256": "sha256:5025c192e4b4607a5d872e193c3529efa235b747b383cbd9573d81b4a7cc14e3",
+      "size_bytes": 585
+    },
+    {
+      "path": "examples/psychology_paper_01.txt",
+      "sha256": "sha256:66013e2b20e85a26c1e116a6378b3a98e565d70a841d74c1a0a28d044b45a459",
+      "size_bytes": 690
+    },
+    {
+      "path": "examples/real_papers/README.md",
+      "sha256": "sha256:91238fe0328127f541ed2210f08e02e34859fe65e34daf9931ab0f8d179730f1",
+      "size_bytes": 738
+    },
+    {
+      "path": "examples/real_papers/manifest.template.json",
+      "sha256": "sha256:46052a0320902006c74bdedb767cf52daec45f4776698180f7c42d110e95059e",
+      "size_bytes": 447
+    },
+    {
+      "path": "examples/real_papers/sample_local_paper.txt",
+      "sha256": "sha256:aa88797677827e28ca4109e3b25f52d269dd146355e2ff07e5b44730428c3f7d",
+      "size_bytes": 527
+    },
+    {
+      "path": "keys/README.md",
+      "sha256": "sha256:b253b552b6840858a4a7f83ecd49e89baa1a93e4e93076b0d1b69dde9ae0c172",
+      "size_bytes": 412
+    },
+    {
+      "path": "packages/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/certificates/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/certificates/builder.py",
+      "sha256": "sha256:451ec81b3e38e5b5211497885f855e50b03ae68baf357f97ce0fa2d76abc3d43",
+      "size_bytes": 4089
+    },
+    {
+      "path": "packages/certificates/hashes.py",
+      "sha256": "sha256:4876150e77c657e7c15a24ef3b6c03f9d0d72a03546886105c92581400e3c95f",
+      "size_bytes": 397
+    },
+    {
+      "path": "packages/certificates/report_html.py",
+      "sha256": "sha256:377bcc9820d1c4b37339049de83003461616053eb7356e13e337bda15f171cf6",
+      "size_bytes": 24955
+    },
+    {
+      "path": "packages/certificates/report_markdown.py",
+      "sha256": "sha256:b05f7ef4a4fb0d4a21374b574dd96511c0f50850c00085038be59ec9353cef69",
+      "size_bytes": 967
+    },
+    {
+      "path": "packages/certificates/schema.py",
+      "sha256": "sha256:aaf2d83baadcfd7c4cffa4c7309480d569e12ef7a7abf13b5c6799929d7c3223",
+      "size_bytes": 540
+    },
+    {
+      "path": "packages/certificates/serializer.py",
+      "sha256": "sha256:db9b20d44466ee1a6b35eedbde171080ca40f6b080214b104159760799bbe48a",
+      "size_bytes": 240
+    },
+    {
+      "path": "packages/checks/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/checks/base.py",
+      "sha256": "sha256:dca8b09f2862b122d12af1ff97a80c5eea7142af3cb321f06afddad3fdb5c2f4",
+      "size_bytes": 701
+    },
+    {
+      "path": "packages/checks/common/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/checks/common/attempts.py",
+      "sha256": "sha256:759d84cdb9392577ec22f4ea19f89a3575b8552b73bec528a48bce398e2e2497",
+      "size_bytes": 7963
+    },
+    {
+      "path": "packages/checks/common/evidence.py",
+      "sha256": "sha256:41848dc50da7ece1f1fdead39ee3d947b64ebf04333a37e1c7e8a289f2ba7378",
+      "size_bytes": 28
+    },
+    {
+      "path": "packages/checks/common/execution_stub.py",
+      "sha256": "sha256:96867d814d42e8439e5e5632bc5bc22024d4c8e9d353f5d0bea6c4eefa058e97",
+      "size_bytes": 10889
+    },
+    {
+      "path": "packages/checks/common/formal_semantic_artifact.py",
+      "sha256": "sha256:b2b967e7efa1203c1704aa65734ddebcec0d0f604ba4c1604b35e05b48384e55",
+      "size_bytes": 1574
+    },
+    {
+      "path": "packages/checks/common/reference_resolution.py",
+      "sha256": "sha256:82d2e667867e8f4455ffc7598467a7fe4c7795d2adac25a3d9e8ef5601ebec4f",
+      "size_bytes": 3917
+    },
+    {
+      "path": "packages/checks/common/references.py",
+      "sha256": "sha256:e561f9a10f1248cface8f236682b85acca3cb2b946c1d34c4527349b7f1a668d",
+      "size_bytes": 5006
+    },
+    {
+      "path": "packages/checks/common/repo_identity.py",
+      "sha256": "sha256:6a9f0a70d60b401131a5acb3b42a091d13b7822249785bdf6c74ae9f07a49e29",
+      "size_bytes": 2001
+    },
+    {
+      "path": "packages/checks/common/repository_metadata.py",
+      "sha256": "sha256:1608c6830307b3c5ec9fe26c84870603d747dcb1c8326b6be76e09394894f7c3",
+      "size_bytes": 4515
+    },
+    {
+      "path": "packages/checks/common/scoring.py",
+      "sha256": "sha256:c796fc6ffc593bc6b3a67e02a4f042fba426a99ebf9e09015386f9c25411fb70",
+      "size_bytes": 1523
+    },
+    {
+      "path": "packages/checks/common/taxonomy.py",
+      "sha256": "sha256:90f623ec9639ad9739525d44f3bd0a1344f9e144758f398f95f4c20d8d28e0bb",
+      "size_bytes": 225
+    },
+    {
+      "path": "packages/checks/domains/README.md",
+      "sha256": "sha256:9e80b37c2ff5eaf28235645f68c2bb2ccac0fe4278d41a555713eabf41419860",
+      "size_bytes": 99
+    },
+    {
+      "path": "packages/checks/domains/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/checks/domains/computational/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/checks/domains/computational/outputs.py",
+      "sha256": "sha256:594ae9122ea30660cf2e36dce5f5240fc3ef1570df940f47fb8ad61005a915eb",
+      "size_bytes": 41
+    },
+    {
+      "path": "packages/checks/domains/computational/repo2docker_runner.py",
+      "sha256": "sha256:7c7c3bc76820413d63165323a104e20e6b211698bc94c2a6ac4eac0caf1ebda1",
+      "size_bytes": 343
+    },
+    {
+      "path": "packages/checks/domains/computational/reproducibility.py",
+      "sha256": "sha256:e916982d703edcd8f2314c5935102e641ede933c462bb379c6890b29c21a25ce",
+      "size_bytes": 49
+    },
+    {
+      "path": "packages/checks/domains/computational/workflow.py",
+      "sha256": "sha256:72d5f388f5aea6ec4b0a311079287511ac5790808a37694731e901b504fd19d6",
+      "size_bytes": 2564
+    },
+    {
+      "path": "packages/checks/domains/formal_proof/__init__.py",
+      "sha256": "sha256:ec355c2029b570c11d30305314543324e4359c4e0101c7920e45136f416bd3f1",
+      "size_bytes": 77
+    },
+    {
+      "path": "packages/checks/domains/formal_proof/workflow.py",
+      "sha256": "sha256:4c5737f1bdf42ed6e223be2105c05d78e5af20b48c0298bfcbdfb6c467866a95",
+      "size_bytes": 98
+    },
+    {
+      "path": "packages/checks/domains/psychology/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/checks/domains/psychology/llm_checks.py",
+      "sha256": "sha256:d60bb586bbc5a6349f842a86e140ca99709642b11d017e61ac40afe74937060b",
+      "size_bytes": 2312
+    },
+    {
+      "path": "packages/checks/domains/psychology/prompts.py",
+      "sha256": "sha256:bc5281950dda00930dd244c58f08b557f51c247bb77a20ae88e323f3e0a2adcd",
+      "size_bytes": 685
+    },
+    {
+      "path": "packages/checks/domains/psychology/rules.py",
+      "sha256": "sha256:c9b16aa6b17b130553472abe345d419657123fa632722c3b046524137ae59b17",
+      "size_bytes": 465
+    },
+    {
+      "path": "packages/checks/domains/psychology/statcheck_runner.py",
+      "sha256": "sha256:6c9d52a26edaf6b9b1113988c20db62120ed13b7f2e0b3c45fbb47678281c9f1",
+      "size_bytes": 47
+    },
+    {
+      "path": "packages/checks/domains/psychology/workflow.py",
+      "sha256": "sha256:a32022bfbbd55da27431377b51938d272de74db86d964880b0f377b8a0ae20f4",
+      "size_bytes": 2561
+    },
+    {
+      "path": "packages/checks/domains/quant_experimental/__init__.py",
+      "sha256": "sha256:25dba41e6318f6f1aa0bcc4cedda1737e2b78cfdcfaecf74333ac1891317ee87",
+      "size_bytes": 62
+    },
+    {
+      "path": "packages/checks/domains/quant_experimental/llm_checks.py",
+      "sha256": "sha256:aabf3084e1c3aa17e62074ccbca75baaa2fd24c42f5443927283b947e669744b",
+      "size_bytes": 2346
+    },
+    {
+      "path": "packages/checks/domains/quant_experimental/prompts.py",
+      "sha256": "sha256:835d09572eca960e10afd18a28bd546776e5f817bc3aba09ee060dabc3f0dd98",
+      "size_bytes": 701
+    },
+    {
+      "path": "packages/checks/domains/quant_experimental/workflow.py",
+      "sha256": "sha256:93af3338431568806214bdbefea639b02785a32e64eaf249e03eaefa0c86e437",
+      "size_bytes": 104
+    },
+    {
+      "path": "packages/checks/plugin_loader.py",
+      "sha256": "sha256:e3ae5f2281ec4a2492418ccbc17e0c57f482b8682c50d1b56fcc3309effaf479",
+      "size_bytes": 2048
+    },
+    {
+      "path": "packages/checks/registry.py",
+      "sha256": "sha256:1c5e027f96e95facfbc643b656ed9e9e64e9a3a47d8380c0b81374b2bade1375",
+      "size_bytes": 7111
+    },
+    {
+      "path": "packages/checks/runners/__init__.py",
+      "sha256": "sha256:91267e5273d842b43eced4d625589666a8be87dd9855593e67a594133873aedd",
+      "size_bytes": 527
+    },
+    {
+      "path": "packages/checks/runners/computational.py",
+      "sha256": "sha256:8055aa4f6b28c052a0e88551d3e526bd97b8813e2c3797a0c8f1457392fcb9e7",
+      "size_bytes": 5421
+    },
+    {
+      "path": "packages/checks/runners/formal_proof.py",
+      "sha256": "sha256:56dbb0e2f058b077a730170b3ec27ec1210f736e03f5b4ecf2755bc484aa46df",
+      "size_bytes": 9187
+    },
+    {
+      "path": "packages/checks/runners/llm_evidence.py",
+      "sha256": "sha256:66867baa9f2663e946ad327724ebdeee1d0fe2e0b6e0c13e835a33fda5169a11",
+      "size_bytes": 3951
+    },
+    {
+      "path": "packages/checks/runners/not_implemented.py",
+      "sha256": "sha256:deaec9cf59cbbf0bb67be2d50f8379773b012ea9e369a9418c9003a553289795",
+      "size_bytes": 694
+    },
+    {
+      "path": "packages/checks/runners/pattern.py",
+      "sha256": "sha256:051513ecbf30b4a755fc8eb9a98e039ecb23015dc68d579402e4fde0160ddcb1",
+      "size_bytes": 5024
+    },
+    {
+      "path": "packages/checks/runners/references.py",
+      "sha256": "sha256:d9bcd4b31f3c61a70c959dacad378e7eb61b6bde9cf2d587bc86f4e758ca9f5d",
+      "size_bytes": 4095
+    },
+    {
+      "path": "packages/checks/runners/repo2docker.py",
+      "sha256": "sha256:a89eae0818010515bb9db572b0ae5ea172455ca5c8051a2662a0857a151b1568",
+      "size_bytes": 8086
+    },
+    {
+      "path": "packages/core/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/config.py",
+      "sha256": "sha256:bd126ec4b757ee57356ccca2b0e45938d3770aaf366ee0a499151a3ea17715a6",
+      "size_bytes": 5820
+    },
+    {
+      "path": "packages/core/errors.py",
+      "sha256": "sha256:0719dfa5b2056b53267439559373c02ed9ae8dc05a087167eeb930663a39f5d3",
+      "size_bytes": 171
+    },
+    {
+      "path": "packages/core/hashing.py",
+      "sha256": "sha256:689ecfab1beaa9afb6defe2abf1c98329d399b70d69928c7cd9449ee0f09b760",
+      "size_bytes": 360
+    },
+    {
+      "path": "packages/core/logging.py",
+      "sha256": "sha256:bc8e0583b3d1a7cdb894d96f7b34e06c0fbfc0e5c8ac33eb672ae837874cdd73",
+      "size_bytes": 27
+    },
+    {
+      "path": "packages/core/models.py",
+      "sha256": "sha256:38b321f804a99137687081bcb9f0cf2365bbb438d46085ce182693a7e24c305e",
+      "size_bytes": 21623
+    },
+    {
+      "path": "packages/core/security.py",
+      "sha256": "sha256:ef1fc702898b84d07ea56dfe062cb742028f08bdc6858f2b326be4471157fd2c",
+      "size_bytes": 571
+    },
+    {
+      "path": "packages/core/utils.py",
+      "sha256": "sha256:0c69e665523f665b4467c33806bc74e618e63f17bb94e7de9665714a7c2ce8b8",
+      "size_bytes": 25
+    },
+    {
+      "path": "packages/evaluation/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/evaluation/goldset.py",
+      "sha256": "sha256:67c85fc6f9ef85fdfd318454dc87d39231fca29689b8a169c7f18acf5e0df243",
+      "size_bytes": 4390
+    },
+    {
+      "path": "packages/evaluation/matrix.py",
+      "sha256": "sha256:b4d0beedda3f850f53614c0676c53f70a7a2755e6e86423efe86b251728df3ac",
+      "size_bytes": 6130
+    },
+    {
+      "path": "packages/evaluation/real_papers.py",
+      "sha256": "sha256:030f5a5aecf747027a9f477e8f5bac036a8fa39ab9496b07d4407f4eae61d7f2",
+      "size_bytes": 3954
+    },
+    {
+      "path": "packages/ingest/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/ingest/doi.py",
+      "sha256": "sha256:493d9017688b7dcbea1737b25af20f1e9a020591a68d180f7723d2cbfedb5070",
+      "size_bytes": 4056
+    },
+    {
+      "path": "packages/ingest/grobid_client.py",
+      "sha256": "sha256:e24b822ea712b895d7b655b4da82a0eab387482adcf64114ec42c1ae5b591c27",
+      "size_bytes": 33
+    },
+    {
+      "path": "packages/ingest/normalizer.py",
+      "sha256": "sha256:473ffda9de4f14670abd9f7b7039f79d8bd7b5d6e6d67beffd43fd55e893d2c0",
+      "size_bytes": 30
+    },
+    {
+      "path": "packages/ingest/parser.py",
+      "sha256": "sha256:e50cb7044c641a46c8edc25636e82321ef32f373c7cecff3a133ef4fb667b961",
+      "size_bytes": 2852
+    },
+    {
+      "path": "packages/llm/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/llm/client.py",
+      "sha256": "sha256:251235b9a21e8b5e48b66c1ceeb96dff2ebd021accacb1f1339ba34086d84247",
+      "size_bytes": 891
+    },
+    {
+      "path": "packages/llm/extraction.py",
+      "sha256": "sha256:d6ea7dd75ef5d62b707600ba5b0ff9a75ff5f858a0ccaba3d52e347c2f1582b1",
+      "size_bytes": 935
+    },
+    {
+      "path": "packages/llm/guardrails.py",
+      "sha256": "sha256:3d500d0468b45d635837cc6914d0e13954aa3ba1024ba1ed14302284197aad04",
+      "size_bytes": 362
+    },
+    {
+      "path": "packages/llm/profiles.py",
+      "sha256": "sha256:cacd7804c8cca3c71031dd849975bb73805acc2b3e6e309f4f6840d4f5229a13",
+      "size_bytes": 6710
+    },
+    {
+      "path": "packages/llm/providers.py",
+      "sha256": "sha256:f28b8eb5ee6bac71610bec298ce1215623bbe5fc4b707dfa1a4b032eb6d6a585",
+      "size_bytes": 11790
+    },
+    {
+      "path": "packages/llm/schemas.py",
+      "sha256": "sha256:02fdce54336cb7cba9c972b29efa5833d0aff75d193cbcd544e9a024aad6c9b8",
+      "size_bytes": 858
+    },
+    {
+      "path": "packages/provenance/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/provenance/attestations.py",
+      "sha256": "sha256:b4bc8b11c4d97a67a90775f150fccaac144ae89b703f9610114eee924f6bdaa0",
+      "size_bytes": 32
+    },
+    {
+      "path": "packages/provenance/manifest.py",
+      "sha256": "sha256:1b3b9a2bc4ab677f3de2973cde1ea97f6a3f69b2a6c7bc6c8692fc3feb47a9ce",
+      "size_bytes": 3001
+    },
+    {
+      "path": "packages/provenance/release_signing.py",
+      "sha256": "sha256:fac5935dda858f904234cb53d06b8f5030d6ca807a18999ac8ec3b1a3ad67d5e",
+      "size_bytes": 5721
+    },
+    {
+      "path": "packages/provenance/rocrate_builder.py",
+      "sha256": "sha256:edaadaea7d4f168d084e44a6f91c4dfca93f7efda423dea0ada8c868bf476206",
+      "size_bytes": 11315
+    },
+    {
+      "path": "packages/provenance/sigstore_signer.py",
+      "sha256": "sha256:81fa0794f11609df121280a21ef45620d4f092b2d223fed21fdd089a64fdf530",
+      "size_bytes": 5945
+    },
+    {
+      "path": "packages/provenance/transparency_log.py",
+      "sha256": "sha256:5f5bd72e32353b880a2a5592091373618208da419943d95bd42b13c8680c63e5",
+      "size_bytes": 13950
+    },
+    {
+      "path": "packages/provenance/trust.py",
+      "sha256": "sha256:f35441079665be3fc5c0609900d55f340c30253b3d0ce51500dc3d076f2c4056",
+      "size_bytes": 11413
+    },
+    {
+      "path": "packages/provenance/verify_bundle.py",
+      "sha256": "sha256:a3a9c3ec40f8540e4badc955f9d194dcb5c6bb20107f9b4a275e801e295d583c",
+      "size_bytes": 6223
+    },
+    {
+      "path": "packages/provenance/witness_log.py",
+      "sha256": "sha256:5f6ae14cfbed391729214993703a14f948f0cfd20f474f78e5aa9e3b91fcff8a",
+      "size_bytes": 24109
+    },
+    {
+      "path": "packages/routing/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/routing/domain_registry.py",
+      "sha256": "sha256:80689ed4343ae99a611d288c2d2ff9d7e18f0d769d63073e3aaaf91838cfac87",
+      "size_bytes": 1454
+    },
+    {
+      "path": "packages/routing/domain_router.py",
+      "sha256": "sha256:0ca0ccb0d985a31473f2a38e45e0ea6e9ca7b313453a95e5097f2b2b8903a1df",
+      "size_bytes": 971
+    },
+    {
+      "path": "packages/routing/policies.py",
+      "sha256": "sha256:d39d2b9b1682b233f294c1b93cf16641d82e025856b11e3b1d34b39138b9968d",
+      "size_bytes": 3275
+    },
+    {
+      "path": "packages/storage/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/storage/local_store.py",
+      "sha256": "sha256:56ed2d948ac508c7dcd83cb8d2e086c654ff3ced1fa6cab7497efcd40d03064e",
+      "size_bytes": 526
+    },
+    {
+      "path": "packages/storage/object_store.py",
+      "sha256": "sha256:8645850a73c5c806cfb881bc3791e5b94c53c5bcd53b214771f325575376a0f8",
+      "size_bytes": 32
+    },
+    {
+      "path": "packages/storage/paths.py",
+      "sha256": "sha256:f1f2aa55cf4ca45ceff3f9c11fc5e6385545de51434c1fb20afb2f28a49c7725",
+      "size_bytes": 25
+    },
+    {
+      "path": "packages/storage/registry.py",
+      "sha256": "sha256:78eab89d133bd5d39fb3872fbf644da2774d31611eac817e0c7fb2bb8b3eb322",
+      "size_bytes": 27403
+    },
+    {
+      "path": "plugins/__init__.py",
+      "sha256": "sha256:d3539dc5108b7870f7a3fc63e2d5fb785644c04fb9ce6e217cc60fcb25a06148",
+      "size_bytes": 56
+    },
+    {
+      "path": "plugins/wordcount_plugin.py",
+      "sha256": "sha256:4cbac2a4587a7214a83e5be655d0f80ea6919dd99d0e00c2d74540157490e081",
+      "size_bytes": 2468
+    },
+    {
+      "path": "prompts/common/evidence_format.md",
+      "sha256": "sha256:4a08bfce026d149ef76757efc385350677a33131b3270f8ca522c5ee175ac2c9",
+      "size_bytes": 46
+    },
+    {
+      "path": "prompts/common/system.md",
+      "sha256": "sha256:d1c46ef1a3fc9c3434e10d56e5619b8c30de6b13da982b292409166d746c7824",
+      "size_bytes": 62
+    },
+    {
+      "path": "prompts/psychology/control_group.md",
+      "sha256": "sha256:40a09ac1beb989f175f19cef81cb94be6aa2ab27e3b52c9360136f8cbe81981e",
+      "size_bytes": 640
+    },
+    {
+      "path": "prompts/psychology/effect_size.md",
+      "sha256": "sha256:1bad2405d02c5ef9b0b771159bba7fa746c3ea98ed1c80c68448218562e70d3b",
+      "size_bytes": 20
+    },
+    {
+      "path": "prompts/psychology/overclaiming.md",
+      "sha256": "sha256:dd0e472c26e1449405111385c268ab7166a83aa0d8309a50d781c31d6d106c19",
+      "size_bytes": 685
+    },
+    {
+      "path": "prompts/psychology/raw_data.md",
+      "sha256": "sha256:399d7657e5233f06f1b19907f09ee2694ca1483998ce63fa2e806c661ed0329d",
+      "size_bytes": 602
+    },
+    {
+      "path": "prompts/psychology/sample_size.md",
+      "sha256": "sha256:0bb227f5d7f5882753ddbf041b93934a79d8d054ab94e6c9e39f2841e016dc44",
+      "size_bytes": 690
+    },
+    {
+      "path": "prompts/quant_experimental/control_group.md",
+      "sha256": "sha256:8a9a0305b5b43d95088f8a00c10d86b9c94d5e226bd70fa1a8a4e91abefe81c4",
+      "size_bytes": 1923
+    },
+    {
+      "path": "prompts/quant_experimental/effect_size.md",
+      "sha256": "sha256:d83b9c6268eb880afd5a0763e035f69aaf6f6293e55036926b72ab232b99a00d",
+      "size_bytes": 1612
+    },
+    {
+      "path": "prompts/quant_experimental/overclaiming.md",
+      "sha256": "sha256:adf497abe592570a3d328feb10d2710ce4f8ddf0434b6b996b81a9df58f81703",
+      "size_bytes": 715
+    },
+    {
+      "path": "prompts/quant_experimental/raw_data.md",
+      "sha256": "sha256:7898f2aad67b893d158d3b8a12850facac7588f9ebdd7a41805963621629d643",
+      "size_bytes": 632
+    },
+    {
+      "path": "prompts/quant_experimental/sample_size.md",
+      "sha256": "sha256:b307b3eb1d019da60c3b75c8ffd0dcd81f61c4fb5ab285285533541887b1f77b",
+      "size_bytes": 720
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "sha256:5e009e6a2341b2f11750f8044ff56621539476d116a05f20d66e82ca97327440",
+      "size_bytes": 193
+    },
+    {
+      "path": "schemas/build_provenance.schema.json",
+      "sha256": "sha256:9481d6c8ceb64eada23b9c035b6d5b9d3cf0d66ee0dfd4590cdbe2735ee6cf6e",
+      "size_bytes": 3996
+    },
+    {
+      "path": "schemas/certificate.schema.json",
+      "sha256": "sha256:10cdaf66d01d6ba4cca5c93d7830e87152b75e579b6bc2f1362fa331d038ae46",
+      "size_bytes": 18585
+    },
+    {
+      "path": "schemas/check_result.schema.json",
+      "sha256": "sha256:259ccb7da559926d9b08f9e7cfcf8e6661a8cdf21911205a9bed211ad5976997",
+      "size_bytes": 382
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "sha256": "sha256:8c6c5c67550db8a2f241b394a976e34459a3954b5df9b00445c297c5f65468a7",
+      "size_bytes": 287
+    },
+    {
+      "path": "schemas/execution_attempts.schema.json",
+      "sha256": "sha256:271cdac249dacf554c7e4c274cc9902aa277942ab1870630d181fcc142ac1a67",
+      "size_bytes": 3621
+    },
+    {
+      "path": "schemas/execution_plan.schema.json",
+      "sha256": "sha256:d137f1af6d83dc1e303842e0ec74a10aee469dc824405151828c4d11d03af298",
+      "size_bytes": 4210
+    },
+    {
+      "path": "schemas/execution_receipts.schema.json",
+      "sha256": "sha256:25f3aa5f6e20020e9f455d1577fcbe5e91283990e54622425d35c71ac3c1d86c",
+      "size_bytes": 4712
+    },
+    {
+      "path": "schemas/execution_stub_outputs.schema.json",
+      "sha256": "sha256:f64d65b40fdecf7e017c275ec3e05b69b0bef9b66502b2c8fb2631d8f26b435f",
+      "size_bytes": 4258
+    },
+    {
+      "path": "schemas/provider_profiles.json",
+      "sha256": "sha256:d853332a221c6e4408dc1b6fd17fe91a7aaad5aead88e1f9c2b14e84578298f2",
+      "size_bytes": 4086
+    },
+    {
+      "path": "schemas/reference_audit.schema.json",
+      "sha256": "sha256:61be271b9313f329a6c9c86ae5afa04d1cfb035a8c5729ef49c7ccb11048098c",
+      "size_bytes": 2948
+    },
+    {
+      "path": "schemas/reference_resolution.schema.json",
+      "sha256": "sha256:eab03da9bc7b356d8451489cf06914a01e03cb4b6b6b9a104d2132dc50b401a5",
+      "size_bytes": 3342
+    },
+    {
+      "path": "schemas/repository_metadata.schema.json",
+      "sha256": "sha256:a5f60b8cf5ce15659d697a9270a3c4def4f2d086767f1e5a765f449f38ccfc49",
+      "size_bytes": 5193
+    },
+    {
+      "path": "schemas/rocrate_profile.json",
+      "sha256": "sha256:0728237efb51c321c8beba178a95d0102731417691d16423fb750b0a892a00a9",
+      "size_bytes": 143
+    },
+    {
+      "path": "scripts/benchmark_costs.py",
+      "sha256": "sha256:73ca7245d4bd7cd008b756c9d34fce03069018f51c5666a755028b8dc3684337",
+      "size_bytes": 35
+    },
+    {
+      "path": "scripts/compute_release_manifest.py",
+      "sha256": "sha256:8b1903cc11f7cd8404c1393e08fc7176d2e438e53ba57d0e90a36398b304cf5f",
+      "size_bytes": 795
+    },
+    {
+      "path": "scripts/dev_start.sh",
+      "sha256": "sha256:9d3090cbfb7c8e0f55a446db47c506e06e733aeedc727fcbddebc13210ee65a8",
+      "size_bytes": 51
+    },
+    {
+      "path": "scripts/evaluate_provider_matrix.py",
+      "sha256": "sha256:a4fde005d9ff83ce52f254a441e10ee2a1aca5955e3665679d5baab853235147",
+      "size_bytes": 1710
+    },
+    {
+      "path": "scripts/evaluate_quant_experimental.py",
+      "sha256": "sha256:d65835dcbd7d9380fd2d90f6fb0e163047fbe46fbefc8332ec2f4531ced80a46",
+      "size_bytes": 1273
+    },
+    {
+      "path": "scripts/evaluate_real_papers.py",
+      "sha256": "sha256:8a6a5324648ab20cd4475d0bb58f72d55455ec7a2a6dc28ff397742e81064572",
+      "size_bytes": 1550
+    },
+    {
+      "path": "scripts/export_build_provenance_schema.py",
+      "sha256": "sha256:cf539487cd793cc5703ff8d0e6252713aeec0b112e09f2731acf2b9a5eba4545",
+      "size_bytes": 579
+    },
+    {
+      "path": "scripts/export_certificate.py",
+      "sha256": "sha256:bcb8efc2848525e61f68ff43dcccd99fbd34dd40c30da02c4f00b140cbd5dedd",
+      "size_bytes": 38
+    },
+    {
+      "path": "scripts/export_certificate_schema.py",
+      "sha256": "sha256:96ec8d6f9777fe22a980deea6054dc7e88bc1a019761514d824e62b2f74a8421",
+      "size_bytes": 401
+    },
+    {
+      "path": "scripts/export_execution_attempts_schema.py",
+      "sha256": "sha256:3e83612aea48e5d9bd03d58d3093d357ed0238d24c09cac55d3892eb48d4a4e4",
+      "size_bytes": 558
+    },
+    {
+      "path": "scripts/export_execution_plan_schema.py",
+      "sha256": "sha256:8d7a5149185f670941fab5bac56c080e996854c9ce6fc839ab87e859d2167a86",
+      "size_bytes": 546
+    },
+    {
+      "path": "scripts/export_execution_receipts_schema.py",
+      "sha256": "sha256:e22b4351b00c43a1d08ece5f43a84da04e8bb54e5c2e2875c2d99b5b845ee3ae",
+      "size_bytes": 558
+    },
+    {
+      "path": "scripts/export_execution_stub_outputs_schema.py",
+      "sha256": "sha256:954bbd1dbf14d52b604fb657a3186adddaf8ac75c79c97e24ce0eae8314392a1",
+      "size_bytes": 518
+    },
+    {
+      "path": "scripts/export_provider_profiles.py",
+      "sha256": "sha256:849c463d197b86bb84129e9ae06066ea742f0aaa003a63fb2ef9f88b0b2dff1a",
+      "size_bytes": 523
+    },
+    {
+      "path": "scripts/export_reference_audit_schema.py",
+      "sha256": "sha256:f8c59b22f81fde734f0dc4c83f734c87ec4b3c449dd16f26a97bd931ba1c2463",
+      "size_bytes": 460
+    },
+    {
+      "path": "scripts/export_reference_resolution_schema.py",
+      "sha256": "sha256:d3b4845de9616342ab57473dee4dbe7bbbe9ca30e9e7ce1f112f7ce212977205",
+      "size_bytes": 475
+    },
+    {
+      "path": "scripts/export_repository_metadata_schema.py",
+      "sha256": "sha256:426d43186aa1b94d885a5f732d4f8b7412fa4ba30c1d0cfe3bed7eddc2a5f179",
+      "size_bytes": 487
+    },
+    {
+      "path": "scripts/generate_release_signing_keypair.py",
+      "sha256": "sha256:809e0a457c7f1f591ea121cb150f7e44c7c330e47cbe898c3a820b53ce6e2776",
+      "size_bytes": 1103
+    },
+    {
+      "path": "scripts/run_computational_demo_job.py",
+      "sha256": "sha256:2d5c62d78d7a479c70216a8085f9a6b4519517fb7d2a7dc1ebf43a09e886978e",
+      "size_bytes": 1682
+    },
+    {
+      "path": "scripts/run_demo_job.py",
+      "sha256": "sha256:1f0f344617d2dbcac7c467db7b77ce5ed87b61f25878c49344b0eef7cd2c01ed",
+      "size_bytes": 1623
+    },
+    {
+      "path": "scripts/seed_examples.py",
+      "sha256": "sha256:58f2c8d18959c2c7b240e6822a69685597f04ea7392fbc0c907161d55134d164",
+      "size_bytes": 33
+    },
+    {
+      "path": "scripts/sign_release_manifest.py",
+      "sha256": "sha256:77d78d1255820db296dcd070f7012df07e91998ef802b7caebb15d3ddf5f802e",
+      "size_bytes": 1661
+    },
+    {
+      "path": "scripts/verify_bundle.py",
+      "sha256": "sha256:348f9687311f2719833855e61efea34d9f6e51d06ffe1e33ad4d944b915c3181",
+      "size_bytes": 815
+    },
+    {
+      "path": "scripts/verify_release_match.py",
+      "sha256": "sha256:665aa8c3b58709851a88dc8e0da2ae90f34baf5c892808a0ff3229978b07d0e2",
+      "size_bytes": 1092
+    },
+    {
+      "path": "scripts/verify_release_signature.py",
+      "sha256": "sha256:321733d2be37d121432b7bd51aac8be7830d58c4886faed21f3e961c37255188",
+      "size_bytes": 1069
+    },
+    {
+      "path": "scripts/verify_transparency_log.py",
+      "sha256": "sha256:dccc36b0cb4295e01b16be01dce4d5ee206614c2f3c5ac485fbeda45d4af81cb",
+      "size_bytes": 875
+    },
+    {
+      "path": "scripts/verify_witness.py",
+      "sha256": "sha256:3ae78be71694f7b433f7ff971c35386dfba331305e531b8c68f01431586fa741",
+      "size_bytes": 732
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/e2e/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/e2e/test_api_file_intake_e2e.py",
+      "sha256": "sha256:a46303643e8709126ebbca1342e5128bbe3c319fd91d0f0cc8d7f70f471746f4",
+      "size_bytes": 1377
+    },
+    {
+      "path": "tests/e2e/test_api_formal_proof_text_intake_e2e.py",
+      "sha256": "sha256:16413734ed286856d026f1818f156d523ca6993ae74ecc3c28d08b940568b7e4",
+      "size_bytes": 1232
+    },
+    {
+      "path": "tests/e2e/test_api_text_intake_e2e.py",
+      "sha256": "sha256:446021214269263158a48d3ad79f0bfd7f6336cb55981bc48735a26b14add11f",
+      "size_bytes": 1366
+    },
+    {
+      "path": "tests/e2e/test_api_verify_bundle_e2e.py",
+      "sha256": "sha256:79ec2118ea3ee6a77c47beed99e463bedc391cb0a714b49c34518707679253ef",
+      "size_bytes": 1528
+    },
+    {
+      "path": "tests/fixtures/formal_proof/lean_semantically_clean.txt",
+      "sha256": "sha256:4ac2f9f99d9605ec2082eaf807c4c94dedd20f45c84907bb45244176cba38412",
+      "size_bytes": 167
+    },
+    {
+      "path": "tests/fixtures/formal_proof/lean_with_true_fake.txt",
+      "sha256": "sha256:56da9a31b40acc5e6a0613ee1f8ac0fd65dcc291b1b8d8a49e96fde1d3fa4064",
+      "size_bytes": 151
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/manifest.json",
+      "sha256": "sha256:811fe3dad2fdfc6cbd3b4f1ef1e683141862ab517793621d96ffb98dbd0b416e",
+      "size_bytes": 11371
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_01_good_controlled.txt",
+      "sha256": "sha256:beb36e1d1fbb732450eae59ec19631540486587e333442c234eed4388a30d842",
+      "size_bytes": 678
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_02_missing_control.txt",
+      "sha256": "sha256:6a1a4e148541b8c55a92efbe029c874a8d155eda101b9b0e19ea6c29c38da4a6",
+      "size_bytes": 421
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_03_missing_sample.txt",
+      "sha256": "sha256:353023a5a94e0b623df11e1a489a487ed9e92fe9beaf7438236de352391b94f3",
+      "size_bytes": 463
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_04_overclaiming.txt",
+      "sha256": "sha256:ca953b1f5097c4f0da8448bb01ecb40b90bca4ba58649618d40811026a31f604",
+      "size_bytes": 378
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_05_no_stats.txt",
+      "sha256": "sha256:bb4e23880a43f6878fe7f9f6ad9b30be1b12f6b366050b4f27d016a127aed6f8",
+      "size_bytes": 434
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_06_data_but_no_doi.txt",
+      "sha256": "sha256:3b079917bf0fefea401f58116dd4240541d311d5386b6acb25d315f514b92e5f",
+      "size_bytes": 514
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_07_author_year_no_open_data.txt",
+      "sha256": "sha256:028f90e65203111d9c5df3f5f40ed824825296feefd32f9447bd3dbfe0c7d529",
+      "size_bytes": 436
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_08_effect_without_pvalue.txt",
+      "sha256": "sha256:1c111367ef80d831f575de010c04d5fd35c2e7bc6abd4be477a1172cc495a8af",
+      "size_bytes": 425
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_09_control_no_randomization.txt",
+      "sha256": "sha256:64883dab9ceda9df1840b916d5452e236e2f6a43e1a4b7ca624c3db2cba25264",
+      "size_bytes": 386
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_10_sample_as_n_equals.txt",
+      "sha256": "sha256:14dc248ff4147b7c4cfd107945fba59b677df63ea2870558d05f047e549c642a",
+      "size_bytes": 310
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_11_ci_without_pvalue.txt",
+      "sha256": "sha256:84829682a6a47e9f94b2f83a0341e8478c4b92f78790b2ea2b3074e7b59866f5",
+      "size_bytes": 283
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_12_effect_size_language_only.txt",
+      "sha256": "sha256:9e46249ed436293c7ca46657264cee8480f906ea2ae48c4039b957de1a525617",
+      "size_bytes": 311
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_13_open_materials_only.txt",
+      "sha256": "sha256:c735225f5ebeb8f4f89157409da02b57cd55e4b0d7738d40ed97e3c99767d156",
+      "size_bytes": 365
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_14_raw_data_zenodo.txt",
+      "sha256": "sha256:6d0a7ebb668e1c3fa9bf2fe8c3ff71077be6f7c3afadc9bb54a8e3c8d083b6d5",
+      "size_bytes": 392
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_15_strong_causal_claim.txt",
+      "sha256": "sha256:98dd6ea3e2a49cd4a56c00b22f863289deb5dadbbee273facecd752497c29a17",
+      "size_bytes": 323
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_16_no_references_section.txt",
+      "sha256": "sha256:0a47678a204637a7328b342b103bd881c071b89d9d2fa45248afee7fa594494b",
+      "size_bytes": 228
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_17_relative_risk.txt",
+      "sha256": "sha256:22a7ade9f1732db164f7a8f87840e375c3478df8167a435b4a5606837258e762",
+      "size_bytes": 286
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_18_eta_squared.txt",
+      "sha256": "sha256:08159d184746b0ebe8bcfb74e7fa5cae74ce23500ccdcb46b04ca08063373a79",
+      "size_bytes": 291
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_19_pre_registration_no_data.txt",
+      "sha256": "sha256:a87e02e5b7eb6607e6175fd90af9f2d8b141fd067cdde4ede9ee9fa3eedda581",
+      "size_bytes": 319
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_20_supplementary_data_signal.txt",
+      "sha256": "sha256:1f1bc2d0db25a7fd000c5cdbab261b3b67afff418d326e968fbcfca3400f3a5d",
+      "size_bytes": 344
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_21_missing_stats_but_effect.txt",
+      "sha256": "sha256:942bc0f90bd431cc126c72a357b01b332799be19bd2073d4de50c692468bce17",
+      "size_bytes": 280
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_22_missing_control_and_sample.txt",
+      "sha256": "sha256:bf2f13fbe23be17af7a0122cf50b51b3b0739bd3910f5d800319c3b1880cb2f9",
+      "size_bytes": 250
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_23_url_only_data_signal.txt",
+      "sha256": "sha256:98b6eeb2525fc7d04206d63748f4d2f40ab454dcf26127c4594d96978235b629",
+      "size_bytes": 349
+    },
+    {
+      "path": "tests/fixtures/gold_sets/quant_experimental/qe_24_definitive_language_in_abstract.txt",
+      "sha256": "sha256:50689bd1d7400a6d7067f1bda66739659c060505c711e4cf76ba6e22e4303c2e",
+      "size_bytes": 403
+    },
+    {
+      "path": "tests/integration/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/integration/test_build_provenance_bundle.py",
+      "sha256": "sha256:604682e8cd878f4eea96e23eff75ba472b6d8108f6ffeccd57381c41569c45ad",
+      "size_bytes": 799
+    },
+    {
+      "path": "tests/integration/test_formal_proof_bundle.py",
+      "sha256": "sha256:e8771de76acd77e3af7e65df58583a050301c1e7235a50f13b72023edcfcefb4",
+      "size_bytes": 1488
+    },
+    {
+      "path": "tests/integration/test_provider_matrix_recommendation.py",
+      "sha256": "sha256:94f6fe240443de9935eeba832db9cccffddc62987709a67976560be34fd17a4d",
+      "size_bytes": 685
+    },
+    {
+      "path": "tests/integration/test_psychology_pipeline_llm_hooks.py",
+      "sha256": "sha256:ea5521c9d34e7c0538a76982321d28c1a5a2215856f004b2cbae183b54ed919e",
+      "size_bytes": 887
+    },
+    {
+      "path": "tests/integration/test_quant_experimental_evaluation.py",
+      "sha256": "sha256:0c0481fa7c145b75155c377520a0133d6063073eeb3b9f07fffaaf4ca15d5370",
+      "size_bytes": 561
+    },
+    {
+      "path": "tests/integration/test_quant_experimental_provider_matrix.py",
+      "sha256": "sha256:640567e6de1c296b6c47d713aecec1106abcb2829afd1bf88b5f456759d4fa23",
+      "size_bytes": 560
+    },
+    {
+      "path": "tests/integration/test_real_paper_evaluation_harness.py",
+      "sha256": "sha256:6679f9855e2e6b647ca5995e775148bfaea2d40d869cbd1ded126c9c0299da69",
+      "size_bytes": 1092
+    },
+    {
+      "path": "tests/integration/test_release_verification_bundle.py",
+      "sha256": "sha256:d83b70c1981f36b02821c5d9c9e316b15d60af4de52689de5e0db094197f3d9b",
+      "size_bytes": 1476
+    },
+    {
+      "path": "tests/unit/__init__.py",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/unit/test_bundle_verification.py",
+      "sha256": "sha256:6cf248e16021dfeed8e9d365e922988d907dfd04d88414767e37b07e3c8cd187",
+      "size_bytes": 2634
+    },
+    {
+      "path": "tests/unit/test_custom_llm_provider.py",
+      "sha256": "sha256:8d4ef880ed57b789cf5b01e23814edb678d15781725e3106e3aaa90e5c21f8df",
+      "size_bytes": 822
+    },
+    {
+      "path": "tests/unit/test_formal_proof_audit_runner.py",
+      "sha256": "sha256:c2163292e5c23e8aeea5f23470838556c006333012dde7710395a51817d438e1",
+      "size_bytes": 1587
+    },
+    {
+      "path": "tests/unit/test_goldset_loader.py",
+      "sha256": "sha256:122a55d3ac0ac081a1b2e2cbc2ef08af28b3bee11742b456f9ed103dd3d58bab",
+      "size_bytes": 391
+    },
+    {
+      "path": "tests/unit/test_llm_provider_profiles.py",
+      "sha256": "sha256:4b133f312a60e77f8865119bb3267ad9c78565413b3db5fdfd7cdb9fdd49c0e2",
+      "size_bytes": 946
+    },
+    {
+      "path": "tests/unit/test_provider_matrix.py",
+      "sha256": "sha256:33c7212ad0060f94f4ebd8a23ab1085791d1454e9aa6e0ac3c2b596b2be17777",
+      "size_bytes": 555
+    },
+    {
+      "path": "tests/unit/test_provider_profiles.py",
+      "sha256": "sha256:f6ec05b393a213cc94357a235a6c5d2edfc802dbc94d79337dcd8c7cb9cb4525",
+      "size_bytes": 876
+    },
+    {
+      "path": "tests/unit/test_psychology_llm_request.py",
+      "sha256": "sha256:25bf03d5bef0d93a7225a1e3aad4dbc7afa15896d8819bf5d6239549c07402c2",
+      "size_bytes": 1053
+    },
+    {
+      "path": "tests/unit/test_psychology_prompt_loader.py",
+      "sha256": "sha256:a045b63d2eb66922da863cf4d4c43981ec32ead779030ff9c4376234b70517f5",
+      "size_bytes": 439
+    },
+    {
+      "path": "tests/unit/test_real_paper_manifest.py",
+      "sha256": "sha256:d1f788c3fa06e34cee636c9b4d51f6cd614b94c5a756ab20f3b9f2944560f67a",
+      "size_bytes": 336
+    },
+    {
+      "path": "tests/unit/test_release_signature.py",
+      "sha256": "sha256:bdadfe4717a471395d208fed6f11a54601e8b7937850b7c4f76c5395fea6a41e",
+      "size_bytes": 1915
+    },
+    {
+      "path": "tests/unit/test_security_notice_fields.py",
+      "sha256": "sha256:db3a9b789b9f88679ca05d7a149bd98e45078cf08d0d98244a25f22e237f9066",
+      "size_bytes": 638
+    },
+    {
+      "path": "tests/unit/test_transparency_log.py",
+      "sha256": "sha256:b83cca06d416cada5255f908e91368adb1c5dcf3b75a1812e18f991a9b1fbecf",
+      "size_bytes": 2684
+    },
+    {
+      "path": "tests/unit/test_trust_profile.py",
+      "sha256": "sha256:f573601965b6d7baab3570bc8e8603a28e36ff3d65a4c4fd7704617e4d9e0cf9",
+      "size_bytes": 1035
+    },
+    {
+      "path": "tests/unit/test_witness_log.py",
+      "sha256": "sha256:9c7c4c80fa9914fd46b16866bedc0b7dd80d3897c574e6f19262785ecc4c3aae",
+      "size_bytes": 2047
+    }
+  ]
+}

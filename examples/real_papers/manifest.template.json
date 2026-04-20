@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "case_id": "local_sample_01",
+      "title": "Local evaluation sample",
+      "file": "./sample_local_paper.txt",
+      "domain": "quant_experimental",
+      "doi": null,
+      "notes": "Replace this bundled sample with a local open-access or user-supplied paper before claiming real-paper results.",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass"
+      }
+    }
+  ]
+}

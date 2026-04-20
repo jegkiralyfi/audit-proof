@@ -1,0 +1,11 @@
+Title: Controlled decision experiment
+Abstract
+Participants completed a preregistered decision task. Results suggest a modest but reliable difference between treatment and control conditions.
+Methods
+Participants (N = 84) were randomly assigned to a treatment group or a control group. Materials, code, and raw data are openly available at https://osf.io/abcd1. The study was preregistered.
+Results
+The treatment group differed from the control group, p = 0.03, 95% CI [0.12, 0.78], Cohen's d = 0.42.
+Discussion
+These findings suggest a moderate effect consistent with the intervention hypothesis.
+References
+Smith, A. (2021). Example article. https://doi.org/10.1234/example.1

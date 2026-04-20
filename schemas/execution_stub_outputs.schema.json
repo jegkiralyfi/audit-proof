@@ -1,0 +1,199 @@
+{
+  "$defs": {
+    "ExecutionStubOutputRecord": {
+      "properties": {
+        "record_id": {
+          "title": "Record Id",
+          "type": "string"
+        },
+        "source_attempt_id": {
+          "title": "Source Attempt Id",
+          "type": "string"
+        },
+        "source_receipt_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Receipt Id"
+        },
+        "status": {
+          "enum": [
+            "not_run",
+            "blocked",
+            "skipped",
+            "stub_executed",
+            "failed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "executed": {
+          "default": false,
+          "title": "Executed",
+          "type": "boolean"
+        },
+        "execution_mode": {
+          "default": "local-sandbox-stub",
+          "title": "Execution Mode",
+          "type": "string"
+        },
+        "working_directory": {
+          "default": "/sandbox/dry-run",
+          "title": "Working Directory",
+          "type": "string"
+        },
+        "command_argv": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Command Argv",
+          "type": "array"
+        },
+        "command_preview": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Command Preview"
+        },
+        "return_code": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Return Code"
+        },
+        "stdout_preview": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stdout Preview"
+        },
+        "stderr_preview": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stderr Preview"
+        },
+        "produced_files": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Produced Files",
+          "type": "array"
+        },
+        "started_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Started At"
+        },
+        "finished_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Finished At"
+        },
+        "generated_at": {
+          "format": "date-time",
+          "title": "Generated At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "record_id",
+        "source_attempt_id",
+        "status"
+      ],
+      "title": "ExecutionStubOutputRecord",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "artifact_version": {
+      "default": "0.1.0",
+      "title": "Artifact Version",
+      "type": "string"
+    },
+    "bundle_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bundle Id"
+    },
+    "doc_hash": {
+      "title": "Doc Hash",
+      "type": "string"
+    },
+    "domain": {
+      "title": "Domain",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "records": {
+      "items": {
+        "$ref": "#/$defs/ExecutionStubOutputRecord"
+      },
+      "title": "Records",
+      "type": "array"
+    }
+  },
+  "required": [
+    "doc_hash",
+    "domain"
+  ],
+  "title": "ExecutionStubOutputsArtifact",
+  "type": "object"
+}

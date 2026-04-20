@@ -1,0 +1,9 @@
+Title: Underreported design
+Methods
+Participants completed the intervention task.
+Results
+A difference was observed, p = 0.04.
+Discussion
+These findings suggest a possible effect.
+References
+Doe, J. (2013). Example. https://doi.org/10.1000/example22

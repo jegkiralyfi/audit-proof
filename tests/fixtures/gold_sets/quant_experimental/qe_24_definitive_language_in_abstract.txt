@@ -1,0 +1,11 @@
+Title: Definitive abstract claim
+Abstract
+This study demonstrates definitively that the intervention causes better outcomes.
+Methods
+Participants (N = 73) were randomized to a control group and an intervention group.
+Results
+The effect was significant, p = 0.04.
+Discussion
+The data suggest some caution despite the observed result.
+References
+Doe, J. (2011). Example. https://doi.org/10.1000/example24

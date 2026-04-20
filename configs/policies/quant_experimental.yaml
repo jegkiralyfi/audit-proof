@@ -1,0 +1,218 @@
+domain: quant_experimental
+certification_type: quantitative_experimental_reporting
+scope_label: Quantitative experimental reporting for controlled or comparative social-science
+  studies
+tier: method-data-statistics-interpretation
+policy_version: quant-experimental-v0.1
+declared_standards:
+- id: APA_JARS_QUANT_2018
+  label: APA Journal Article Reporting Standards for Quantitative Research
+  version: '2018'
+  standard_family: reporting-guideline
+  declaration_mode: selected-modules
+  modules:
+  - general quantitative reporting
+  - experimental design reporting
+  - random assignment reporting
+  applicability: Quantitative controlled or comparative studies
+- id: TOP_GUIDELINES_2015
+  label: Transparency and Openness Promotion Guidelines
+  version: '2015'
+  standard_family: openness-guideline
+  declaration_mode: selected-modules
+  modules:
+  - data transparency
+  - materials transparency
+  - preregistration signal
+  applicability: Open-data and open-materials signaling within the audit
+certification_lanes:
+- methods
+- references
+checks:
+- id: sample_size_present
+  required: true
+  type: pattern_check
+  params:
+    preferred_sections:
+    - methods
+    - materials and methods
+    - results
+    pass_patterns:
+    - \bN\s*=\s*\d+
+    - \bn\s*=\s*\d+
+    - \b\d+\s+participants?\b
+    - \bsample size\s*(?:was|=|of)?\s*\d+
+    - \bparticipants?\s*\(\s*N\s*=\s*\d+\s*\)
+    on_match_status: pass
+    on_missing_status: fail
+    on_match_confidence: 0.9
+    on_missing_confidence: 0.8
+    note_on_match: Sample-size evidence found.
+    note_on_missing: No clear sample-size evidence found.
+  standard_refs:
+  - standard_id: APA_JARS_QUANT_2018
+    modules:
+    - general quantitative reporting
+    applicability: Sample-size disclosure for quantitative reports
+- id: control_group_present
+  required: true
+  type: pattern_check
+  params:
+    preferred_sections:
+    - methods
+    - materials and methods
+    - results
+    pass_patterns:
+    - \bcontrol group\b
+    - \bplacebo\b
+    - \brandom(?:ly|ized|isation|ization)?\b
+    - \bassigned to (?:a )?control\b
+    - \bcomparison group\b
+    on_match_status: pass
+    on_missing_status: warning
+    on_match_confidence: 0.8
+    on_missing_confidence: 0.55
+    note_on_match: Control/comparison or randomization language found.
+    note_on_missing: No explicit control/comparison or randomization language found.
+  standard_refs:
+  - standard_id: APA_JARS_QUANT_2018
+    modules:
+    - experimental design reporting
+    - random assignment reporting
+    applicability: Controlled/comparative design reporting
+- id: effect_size_reported
+  required: false
+  type: pattern_check
+  params:
+    preferred_sections:
+    - results
+    - methods
+    pass_patterns:
+    - cohen'?s d
+    - hedges'? g
+    - effect size
+    - eta\^?2
+    - odds ratio
+    - relative risk
+    on_match_status: pass
+    on_missing_status: warning
+    on_match_confidence: 0.85
+    on_missing_confidence: 0.7
+    note_on_match: Effect-size language found.
+    note_on_missing: No explicit effect-size language found.
+  standard_refs:
+  - standard_id: APA_JARS_QUANT_2018
+    modules:
+    - general quantitative reporting
+    applicability: Effect size reporting in quantitative results
+- id: ci_or_pvalue_reported
+  required: true
+  type: pattern_check
+  params:
+    preferred_sections:
+    - results
+    - methods
+    pass_patterns:
+    - \bp\s*[<=>]\s*0?\.\d+
+    - confidence interval
+    - \b95% CI\b
+    - \bCI\s*\[
+    on_match_status: pass
+    on_missing_status: fail
+    on_match_confidence: 0.9
+    on_missing_confidence: 0.8
+    note_on_match: Inferential-statistics evidence found.
+    note_on_missing: No clear p-value or confidence-interval evidence found.
+  standard_refs:
+  - standard_id: APA_JARS_QUANT_2018
+    modules:
+    - general quantitative reporting
+    applicability: Inferential statistics reporting
+- id: raw_data_availability
+  required: false
+  type: llm_evidence_check
+  params:
+    prompt_template: raw_data
+    search_scope: full_text
+    preferred_sections:
+    - methods
+    - references
+    - limitations
+    - discussion
+    pass_patterns:
+    - open data
+    - data availability
+    - osf\.io
+    - zenodo
+    - figshare
+    - supplementary data
+    instruction: Determine whether the document contains a credible signal that data,
+      materials, or supplementary data were made openly available.
+    evidence_limit: 2
+  standard_refs:
+  - standard_id: TOP_GUIDELINES_2015
+    modules:
+    - data transparency
+    applicability: Transparency signal for underlying data
+- id: overclaiming_detected
+  required: true
+  type: llm_interpretation_check
+  params:
+    prompt_template: overclaiming
+    preferred_sections:
+    - discussion
+    - conclusion
+    - abstract
+    pass_patterns:
+    - \bsuggests?\b
+    - \bmay\b
+    - \bmight\b
+    - \bconsistent with\b
+    - \bassociated with\b
+    fail_patterns:
+    - proves? that
+    - demonstrates? definitively
+    - causes?
+    - guarantees?
+    - without limitation
+    instruction: Determine whether the document uses language that overstates causal
+      or definitive conclusions relative to a typical empirical paper.
+    evidence_limit: 2
+  standard_refs:
+  - standard_id: APA_JARS_QUANT_2018
+    modules:
+    - general quantitative reporting
+    applicability: Interpretive discipline aligned with reported results
+    notes: Auxiliary interpretive audit aligned to quantitative reporting scope
+- id: methods_length_signal
+  required: false
+  type: word_count_check
+  params:
+    preferred_sections:
+    - methods
+    - materials and methods
+    min_words: 80
+    pass_note: Methods section has enough surface detail for a first-tier audit.
+    warning_note: Methods section may be too short for a robust first-tier audit.
+- id: reference_integrity
+  required: false
+  type: reference_integrity_check
+  params:
+    min_references_for_pass: 3
+    min_in_text_citations_for_pass: 1
+    note_on_pass: A plausible literature-reference trail was detected.
+    note_on_warning: References were detected, but the literature trail looks incomplete.
+    note_on_fail: No explicit literature-reference trail was detected.
+    on_warning_status: warning
+    on_fail_status: warning
+issuance_rules:
+  fail_if:
+  - ci_or_pvalue_reported == fail
+  - sample_size_present == fail
+  warning_if:
+  - control_group_present == warning
+  - reference_integrity == warning
+  - raw_data_availability == fail
+  - raw_data_availability == warning
+  - effect_size_reported == warning
+  - overclaiming_detected == warning

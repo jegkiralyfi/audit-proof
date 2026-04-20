@@ -1,0 +1,9 @@
+Title: Strong causal claim
+Methods
+We studied 88 participants in a randomized control group design.
+Results
+The intervention improved scores, p = 0.02.
+Conclusion
+The intervention proves that the policy causes universal improvement in decision quality.
+References
+Doe, J. (2024). Example. https://doi.org/10.1000/example15

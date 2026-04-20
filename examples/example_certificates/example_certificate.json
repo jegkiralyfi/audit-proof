@@ -1,0 +1,717 @@
+{
+  "artifact_references": [
+    {
+      "artifact_name": "certificate",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "certificate.json",
+      "role": "certificate"
+    },
+    {
+      "artifact_name": "report",
+      "generated_by": "audit-proof",
+      "media_type": "text/html",
+      "optional": false,
+      "path": "report.html",
+      "role": "human-readable-report"
+    },
+    {
+      "artifact_name": "document",
+      "generated_by": "audit-proof",
+      "media_type": "text/plain",
+      "optional": false,
+      "path": "document.txt",
+      "role": "normalized-document"
+    },
+    {
+      "artifact_name": "rocrate",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "ro-crate-metadata.json",
+      "role": "provenance-package"
+    },
+    {
+      "artifact_name": "manifest",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "manifest.json",
+      "role": "bundle-manifest"
+    },
+    {
+      "artifact_name": "attestation",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "attestation.json",
+      "role": "bundle-attestation"
+    },
+    {
+      "artifact_name": "artifact_bindings",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "artifact_bindings.json",
+      "role": "artifact-hash-bindings"
+    },
+    {
+      "artifact_name": "build_provenance",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "build_provenance.json",
+      "role": "build-provenance"
+    },
+    {
+      "artifact_name": "execution_plan",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "execution_plan.json",
+      "role": "execution-plan"
+    },
+    {
+      "artifact_name": "execution_attempts",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "execution_attempts.json",
+      "role": "execution-attempt-log"
+    },
+    {
+      "artifact_name": "execution_receipts",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "execution_receipts.json",
+      "role": "execution-receipt-log"
+    },
+    {
+      "artifact_name": "execution_stub_outputs",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "execution_stub_outputs.json",
+      "role": "execution-stub-output-log"
+    },
+    {
+      "artifact_name": "release_manifest",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "release_manifest.json",
+      "role": "source-release-manifest"
+    },
+    {
+      "artifact_name": "release_manifest_signature",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "release_manifest.signature.json",
+      "role": "release-manifest-signature"
+    },
+    {
+      "artifact_name": "release_verification",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "release_verification.json",
+      "role": "release-verification-record"
+    },
+    {
+      "artifact_name": "release_public_key",
+      "generated_by": "audit-proof",
+      "media_type": "application/x-pem-file",
+      "optional": false,
+      "path": "keys/release_signing_public_key.pem",
+      "role": "release-signing-public-key"
+    },
+    {
+      "artifact_name": "reference_audit",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "reference_audit.json",
+      "role": "literature-reference-audit"
+    },
+    {
+      "artifact_name": "reference_resolution",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "reference_resolution.json",
+      "role": "reference-doi-resolution"
+    },
+    {
+      "artifact_name": "transparency_record",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "transparency_record.json",
+      "role": "transparency-log-entry-snapshot"
+    },
+    {
+      "artifact_name": "transparency_checkpoint",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "transparency_checkpoint_snapshot.json",
+      "role": "transparency-log-checkpoint-snapshot"
+    },
+    {
+      "artifact_name": "verification_receipts",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "verification_receipts.json",
+      "role": "multi-verifier-receipts"
+    },
+    {
+      "artifact_name": "witness_record",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "witness_record.json",
+      "role": "witness-log-entry-snapshot"
+    },
+    {
+      "artifact_name": "witness_checkpoint",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "witness_checkpoint_snapshot.json",
+      "role": "witness-log-checkpoint-snapshot"
+    },
+    {
+      "artifact_name": "published_checkpoint_reference",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "published_checkpoint_reference.json",
+      "role": "published-checkpoint-reference"
+    }
+  ],
+  "cert_hash": "sha256:a7a299e94a32720bffd938ca80c1facc3cadce03684a6465a4662e422a1039ab",
+  "certificate_version": "0.1.0",
+  "certification_profile": {
+    "certification_lanes": [
+      "methods",
+      "references"
+    ],
+    "certification_type": "quantitative_experimental_reporting",
+    "check_standard_index": {
+      "quant_experimental.ci_or_pvalue_reported": [
+        {
+          "applicability": "Inferential statistics reporting",
+          "modules": [
+            "general quantitative reporting"
+          ],
+          "notes": null,
+          "standard_id": "APA_JARS_QUANT_2018"
+        }
+      ],
+      "quant_experimental.control_group_present": [
+        {
+          "applicability": "Controlled/comparative design reporting",
+          "modules": [
+            "experimental design reporting",
+            "random assignment reporting"
+          ],
+          "notes": null,
+          "standard_id": "APA_JARS_QUANT_2018"
+        }
+      ],
+      "quant_experimental.effect_size_reported": [
+        {
+          "applicability": "Effect size reporting in quantitative results",
+          "modules": [
+            "general quantitative reporting"
+          ],
+          "notes": null,
+          "standard_id": "APA_JARS_QUANT_2018"
+        }
+      ],
+      "quant_experimental.overclaiming_detected": [
+        {
+          "applicability": "Interpretive discipline aligned with reported results",
+          "modules": [
+            "general quantitative reporting"
+          ],
+          "notes": "Auxiliary interpretive audit aligned to quantitative reporting scope",
+          "standard_id": "APA_JARS_QUANT_2018"
+        }
+      ],
+      "quant_experimental.raw_data_availability": [
+        {
+          "applicability": "Transparency signal for underlying data",
+          "modules": [
+            "data transparency"
+          ],
+          "notes": null,
+          "standard_id": "TOP_GUIDELINES_2015"
+        }
+      ],
+      "quant_experimental.sample_size_present": [
+        {
+          "applicability": "Sample-size disclosure for quantitative reports",
+          "modules": [
+            "general quantitative reporting"
+          ],
+          "notes": null,
+          "standard_id": "APA_JARS_QUANT_2018"
+        }
+      ]
+    },
+    "declared_standards": [
+      {
+        "applicability": "Quantitative controlled or comparative studies",
+        "declaration_mode": "selected-modules",
+        "id": "APA_JARS_QUANT_2018",
+        "label": "APA Journal Article Reporting Standards for Quantitative Research",
+        "modules": [
+          "general quantitative reporting",
+          "experimental design reporting",
+          "random assignment reporting"
+        ],
+        "standard_family": "reporting-guideline",
+        "version": "2018"
+      },
+      {
+        "applicability": "Open-data and open-materials signaling within the audit",
+        "declaration_mode": "selected-modules",
+        "id": "TOP_GUIDELINES_2015",
+        "label": "Transparency and Openness Promotion Guidelines",
+        "modules": [
+          "data transparency",
+          "materials transparency",
+          "preregistration signal"
+        ],
+        "standard_family": "openness-guideline",
+        "version": "2015"
+      }
+    ],
+    "scope_label": "Quantitative experimental reporting for controlled or comparative social-science studies"
+  },
+  "checks_run": [
+    {
+      "check_id": "quant_experimental.sample_size_present",
+      "confidence": 0.9,
+      "details": {},
+      "evidence": [
+        {
+          "offset_end": 17,
+          "offset_start": 11,
+          "quote": "A total of N = 84 participants were randomly assigned to a sleep intervention group or a control",
+          "section": "methods+results"
+        }
+      ],
+      "notes": "Sample-size evidence found.",
+      "runner_metadata": {
+        "capabilities": [
+          "evidence-spans",
+          "regex-signals",
+          "section-scoped"
+        ],
+        "description": "Deterministic pattern-based checker for first-tier evidence signals.",
+        "execution_mode": "deterministic",
+        "implementation": "packages.checks.runners.pattern.PatternCheckRunner",
+        "runner_family": "pattern",
+        "runner_type": "pattern_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [
+        {
+          "applicability": "Sample-size disclosure for quantitative reports",
+          "modules": [
+            "general quantitative reporting"
+          ],
+          "notes": null,
+          "standard_id": "APA_JARS_QUANT_2018"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "quant_experimental.control_group_present",
+      "confidence": 0.8,
+      "details": {},
+      "evidence": [
+        {
+          "offset_end": 102,
+          "offset_start": 89,
+          "quote": "gned to a sleep intervention group or a control group. The sample size was determined before data collection. Raw data and materials",
+          "section": "methods+results"
+        }
+      ],
+      "notes": "Control/comparison or randomization language found.",
+      "runner_metadata": {
+        "capabilities": [
+          "evidence-spans",
+          "regex-signals",
+          "section-scoped"
+        ],
+        "description": "Deterministic pattern-based checker for first-tier evidence signals.",
+        "execution_mode": "deterministic",
+        "implementation": "packages.checks.runners.pattern.PatternCheckRunner",
+        "runner_family": "pattern",
+        "runner_type": "pattern_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [
+        {
+          "applicability": "Controlled/comparative design reporting",
+          "modules": [
+            "experimental design reporting",
+            "random assignment reporting"
+          ],
+          "notes": null,
+          "standard_id": "APA_JARS_QUANT_2018"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "quant_experimental.effect_size_reported",
+      "confidence": 0.85,
+      "details": {},
+      "evidence": [
+        {
+          "offset_end": 223,
+          "offset_start": 214,
+          "quote": "terials are available on OSF. We report Cohen's d and 95% CI for all primary outcomes.  Participants in the intervention group sh",
+          "section": "methods+results"
+        }
+      ],
+      "notes": "Effect-size language found.",
+      "runner_metadata": {
+        "capabilities": [
+          "evidence-spans",
+          "regex-signals",
+          "section-scoped"
+        ],
+        "description": "Deterministic pattern-based checker for first-tier evidence signals.",
+        "execution_mode": "deterministic",
+        "implementation": "packages.checks.runners.pattern.PatternCheckRunner",
+        "runner_family": "pattern",
+        "runner_type": "pattern_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [
+        {
+          "applicability": "Effect size reporting in quantitative results",
+          "modules": [
+            "general quantitative reporting"
+          ],
+          "notes": null,
+          "standard_id": "APA_JARS_QUANT_2018"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "quant_experimental.ci_or_pvalue_reported",
+      "confidence": 0.9,
+      "details": {},
+      "evidence": [
+        {
+          "offset_end": 333,
+          "offset_start": 325,
+          "quote": "ervention group showed improved recall, p = 0.03, Cohen's d = 0.42, 95% CI [0.10, 0.74].",
+          "section": "methods+results"
+        }
+      ],
+      "notes": "Inferential-statistics evidence found.",
+      "runner_metadata": {
+        "capabilities": [
+          "evidence-spans",
+          "regex-signals",
+          "section-scoped"
+        ],
+        "description": "Deterministic pattern-based checker for first-tier evidence signals.",
+        "execution_mode": "deterministic",
+        "implementation": "packages.checks.runners.pattern.PatternCheckRunner",
+        "runner_family": "pattern",
+        "runner_type": "pattern_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [
+        {
+          "applicability": "Inferential statistics reporting",
+          "modules": [
+            "general quantitative reporting"
+          ],
+          "notes": null,
+          "standard_id": "APA_JARS_QUANT_2018"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "quant_experimental.raw_data_availability",
+      "confidence": 0.55,
+      "details": {
+        "llm_domain": "quant_experimental",
+        "llm_provider": "heuristic",
+        "match_scope": "full_text",
+        "prompt_template": "quant_experimental/raw_data.md"
+      },
+      "evidence": [],
+      "notes": "Heuristic evidence provider found no decisive evidence in the available excerpt. Checked section scope: full_text.",
+      "runner_metadata": {
+        "capabilities": [
+          "evidence-spans",
+          "heuristic-fallback",
+          "prompted-audit"
+        ],
+        "description": "Evidence-oriented LLM-assisted checker with offline fallback.",
+        "execution_mode": "llm-assisted",
+        "implementation": "packages.checks.runners.llm_evidence.LLMEvidenceCheckRunner",
+        "runner_family": "llm-assisted",
+        "runner_type": "llm_evidence_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [
+        {
+          "applicability": "Transparency signal for underlying data",
+          "modules": [
+            "data transparency"
+          ],
+          "notes": null,
+          "standard_id": "TOP_GUIDELINES_2015"
+        }
+      ],
+      "status": "warning"
+    },
+    {
+      "check_id": "quant_experimental.overclaiming_detected",
+      "confidence": 0.82,
+      "details": {
+        "llm_domain": "quant_experimental",
+        "llm_provider": "heuristic",
+        "match_scope": "preferred",
+        "prompt_template": "quant_experimental/overclaiming.md"
+      },
+      "evidence": [
+        {
+          "offset_end": 205,
+          "offset_start": 202,
+          "quote": "ondition.  These findings support the hypothesis that sleep may improve next-day recall in this task.",
+          "section": "excerpt"
+        }
+      ],
+      "notes": "Heuristic evidence provider found supporting evidence for the configured check. Checked section scope: abstract, discussion.",
+      "runner_metadata": {
+        "capabilities": [
+          "evidence-spans",
+          "heuristic-fallback",
+          "interpretation-audit"
+        ],
+        "description": "Interpretation-focused LLM-assisted checker with offline fallback.",
+        "execution_mode": "llm-assisted",
+        "implementation": "packages.checks.runners.llm_evidence.LLMEvidenceCheckRunner",
+        "runner_family": "llm-assisted",
+        "runner_type": "llm_interpretation_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [
+        {
+          "applicability": "Interpretive discipline aligned with reported results",
+          "modules": [
+            "general quantitative reporting"
+          ],
+          "notes": "Auxiliary interpretive audit aligned to quantitative reporting scope",
+          "standard_id": "APA_JARS_QUANT_2018"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "quant_experimental.methods_length_signal",
+      "confidence": 0.55,
+      "details": {
+        "attempt_kind": "content-profiling",
+        "attempt_status": "not_attempted",
+        "min_words": 80,
+        "observed_word_count": 46
+      },
+      "evidence": [
+        {
+          "offset_end": 171,
+          "offset_start": 0,
+          "quote": "A total of N = 84 participants were randomly assigned to a sleep intervention group or a control group. The sample size was determined before data collection. Raw data and",
+          "section": "methods"
+        }
+      ],
+      "notes": "Methods section may be too short for a robust first-tier audit. Observed word count: 46.",
+      "runner_metadata": {
+        "capabilities": [
+          "content-profiling",
+          "plugin",
+          "section-scoped"
+        ],
+        "description": "Example third-party plugin runner that profiles section length.",
+        "execution_mode": "deterministic",
+        "implementation": "plugins.wordcount_plugin.WordCountCheckRunner",
+        "runner_family": "plugin-example",
+        "runner_type": "word_count_check",
+        "source_kind": "plugin",
+        "source_module": "plugins.wordcount_plugin"
+      },
+      "standard_refs": [],
+      "status": "warning"
+    },
+    {
+      "check_id": "quant_experimental.reference_integrity",
+      "confidence": 0.8,
+      "details": {
+        "doi_count": 0,
+        "in_text_citation_count": 0,
+        "reference_count": 0,
+        "references_section_name": null,
+        "representative_references": [],
+        "style_guess": null,
+        "url_count": 0,
+        "year_count": 0
+      },
+      "evidence": [],
+      "notes": "No explicit literature-reference trail was detected.",
+      "runner_metadata": {
+        "capabilities": [
+          "citation-signals",
+          "doi-url-richness",
+          "literature-audit",
+          "reference-section-detection"
+        ],
+        "description": "First-tier literature-reference audit for references sections, in-text citations, and DOI/URL richness.",
+        "execution_mode": "deterministic",
+        "implementation": "packages.checks.runners.references.ReferenceIntegrityCheckRunner",
+        "runner_family": "references",
+        "runner_type": "reference_integrity_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [],
+      "status": "warning"
+    }
+  ],
+  "doc_hash": "sha256:66013e2b20e85a26c1e116a6378b3a98e565d70a841d74c1a0a28d044b45a459",
+  "doi": null,
+  "domain": "quant_experimental",
+  "issuance": {
+    "matched_fail_rules": [],
+    "matched_warning_rules": [
+      "reference_integrity == warning",
+      "raw_data_availability == warning"
+    ],
+    "reasons": [],
+    "status": "issued_with_warnings",
+    "warnings": [
+      "Optional check raw_data_availability returned warning.",
+      "Optional check methods_length_signal returned warning.",
+      "Optional check reference_integrity returned warning.",
+      "Matched warning rule: reference_integrity == warning",
+      "Matched warning rule: raw_data_availability == warning"
+    ]
+  },
+  "issuer_trust_profile": {
+    "build_provenance_present": true,
+    "container_digest": null,
+    "external_audit_present": false,
+    "issuer_mode": "self_hosted",
+    "notes": [
+      "Runtime source tree does not match release manifest source_tree_hash.",
+      "No local .git directory available; git cleanliness/commit checks are unavailable.",
+      "Trust tier downgraded because runtime source could not be matched to the current stable release manifest."
+    ],
+    "red_team_certified": false,
+    "release_channel": "stable",
+    "release_commit": null,
+    "release_manifest_hash": "sha256:61fa890d15128154b29526234fbc7f9fe952819c138453695296de89b9a2755e",
+    "release_manifest_signed": true,
+    "release_signature_key_id": "local-release-signing-key",
+    "release_signature_verified": true,
+    "release_tag": null,
+    "repo_matches_release": false,
+    "repo_url": null,
+    "runtime_commit": null,
+    "source_tree_hash": "sha256:03dcf61b1ddadb3efa6a99116a03251b2b8ed520baec93e8c9c1f670167aa35b",
+    "trust_tier": "self_hosted_non_audited_self_claim",
+    "verifier_chain_present": true,
+    "verifier_chain_verified": true,
+    "working_tree_clean": null
+  },
+  "notes": "",
+  "operational_profile": {
+    "capability_classes": [
+      "citation-signals",
+      "content-profiling",
+      "doi-url-richness",
+      "evidence-spans",
+      "heuristic-fallback",
+      "interpretation-audit",
+      "literature-audit",
+      "plugin",
+      "prompted-audit",
+      "reference-section-detection",
+      "regex-signals",
+      "section-scoped"
+    ],
+    "execution_modes": [
+      "deterministic",
+      "llm-assisted"
+    ],
+    "optional_checks": 4,
+    "required_checks": 4,
+    "runner_families": [
+      "llm-assisted",
+      "pattern",
+      "plugin-example",
+      "references"
+    ],
+    "runner_types": [
+      "llm_evidence_check",
+      "llm_interpretation_check",
+      "pattern_check",
+      "reference_integrity_check",
+      "word_count_check"
+    ],
+    "source_kinds": [
+      "builtin",
+      "plugin"
+    ],
+    "source_modules": [
+      "plugins.wordcount_plugin"
+    ]
+  },
+  "prompt_injection_protection": "manual-only",
+  "provenance": {
+    "checker_bundle_version": "0.1.0",
+    "generated_at": "2026-03-24T05:13:09.961564Z",
+    "metadata_source": "user-input",
+    "model_version": "rule-based-v0",
+    "parser_version": "0.1.0",
+    "policy_version": "quant-experimental-v0.1",
+    "prompt_bundle_version": "promptless-v0"
+  },
+  "red_team_certified": false,
+  "sandbox_only": true,
+  "security_notice": "SANDBOX / PROTOTYPE ONLY \u2014 NOT RED TEAM CERTIFIED. Manual prompt-injection hardening only. Do not treat any certificate, artifact, report, or execution record as a hardened security boundary or production-grade validation guarantee.",
+  "summary": {
+    "errors": 0,
+    "failed": 0,
+    "not_applicable": 0,
+    "passed": 5,
+    "warnings": 3
+  },
+  "tier": "method-data-statistics-interpretation",
+  "timestamp": "2026-03-24T05:13:09.961581Z",
+  "title": "Example quantitative experimental paper"
+}

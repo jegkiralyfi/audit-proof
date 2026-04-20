@@ -1,0 +1,7 @@
+theorem ym_surface_ready : Prop := True
+
+structure WitnessPackage where
+  hasCriticalElement : Prop
+
+lemma fakeClosure : True := by
+  exact True.intro

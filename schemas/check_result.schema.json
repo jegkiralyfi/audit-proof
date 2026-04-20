@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AuditProofCheckResult",
+  "type": "object",
+  "required": ["check_id", "status", "confidence", "evidence"],
+  "properties": {
+    "check_id": {"type": "string"},
+    "status": {"type": "string"},
+    "confidence": {"type": "number"},
+    "evidence": {"type": "array"},
+    "notes": {"type": "string"}
+  }
+}

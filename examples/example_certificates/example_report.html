@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Audit-Proof Certificate</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 2rem; max-width: 1100px; }
+.warning-banner { background: #7f1d1d; color: white; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; font-weight: bold; }
+.pass { border-left: 4px solid #2e7d32; padding-left: 1rem; margin-bottom: 1rem; }
+.warning { border-left: 4px solid #ed6c02; padding-left: 1rem; margin-bottom: 1rem; }
+.fail { border-left: 4px solid #d32f2f; padding-left: 1rem; margin-bottom: 1rem; }
+.not_applicable, .error { border-left: 4px solid #455a64; padding-left: 1rem; margin-bottom: 1rem; }
+code { background: #f3f3f3; padding: .1rem .3rem; }
+.card { background: #fafafa; border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; }
+.runner-meta { background: #fff; border: 1px dashed #ddd; padding: .6rem .8rem; margin: .75rem 0; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+</style>
+</head>
+<body>
+<div class='warning-banner'>SANDBOX ONLY · NOT RED TEAM CERTIFIED · MANUAL PROMPT-INJECTION GUARDRAILS<br/>SANDBOX / PROTOTYPE ONLY — NOT RED TEAM CERTIFIED. Manual prompt-injection hardening only. Do not treat any certificate, artifact, report, or execution record as a hardened security boundary or production-grade validation guarantee.<br/>VIEW ONLY — verify the signed JSON payload, artifact bindings, and build provenance before relying on this report.</div>
+<h1>Audit-Proof Certificate</h1>
+<p><strong>Title:</strong> Example quantitative experimental paper</p>
+<p><strong>Domain:</strong> quant_experimental | <strong>Tier:</strong> method-data-statistics-interpretation</p>
+<p><strong>Issuance:</strong> issued_with_warnings</p>
+<p><strong>Document hash:</strong> <code>sha256:66013e2b20e85a26c1e116a6378b3a98e565d70a841d74c1a0a28d044b45a459</code></p>
+<p><strong>Certificate hash:</strong> <code>sha256:af5ef5665816f53769929b44d74fc28b757797e1a2dec814608d5a0afbe02a81</code></p>
+<p><strong>Metadata source:</strong> user-input</p>
+<p><strong>Summary:</strong> 5 passed, 3 warnings, 0 failed, 0 errors</p>
+<div class='grid'>
+<div class='card'>
+<h2>Issuance decision</h2>
+<p><strong>Status:</strong> issued_with_warnings</p>
+<p><strong>Reasons:</strong></p>
+<ul><li>None</li></ul>
+<p><strong>Warnings:</strong></p>
+<ul><li>Optional check raw_data_availability returned warning.</li><li>Optional check methods_length_signal returned warning.</li><li>Optional check reference_integrity returned warning.</li><li>Matched warning rule: reference_integrity == warning</li><li>Matched warning rule: raw_data_availability == warning</li></ul>
+</div>
+<div class='card'>
+<h2>Operational profile</h2>
+<p><strong>Policy version:</strong> quant-experimental-v0.1</p>
+<p><strong>Runner types:</strong> llm_evidence_check, llm_interpretation_check, pattern_check, reference_integrity_check, word_count_check</p>
+<p><strong>Runner families:</strong> llm-assisted, pattern, plugin-example, references</p>
+<p><strong>Capability classes:</strong> citation-signals, content-profiling, doi-url-richness, evidence-spans, heuristic-fallback, interpretation-audit, literature-audit, plugin, prompted-audit, reference-section-detection, regex-signals, section-scoped</p>
+<p><strong>Execution modes:</strong> deterministic, llm-assisted</p>
+<p><strong>Source kinds:</strong> builtin, plugin</p>
+<p><strong>Source modules:</strong> plugins.wordcount_plugin</p>
+<p><strong>Required / optional checks:</strong> 4 / 4</p>
+</div>
+</div>
+<div class='card'><h2>Certification profile</h2><p><strong>Certification type:</strong> quantitative_experimental_reporting</p><p><strong>Scope:</strong> Quantitative experimental reporting for controlled or comparative social-science studies</p><p><strong>Lanes:</strong> methods, references</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr><th>ID</th><th>Standard</th><th>Version</th><th>Family</th><th>Declaration</th><th>Modules</th><th>Applicability</th></tr></thead><tbody><tr><td>APA_JARS_QUANT_2018</td><td>APA Journal Article Reporting Standards for Quantitative Research</td><td>2018</td><td>reporting-guideline</td><td>selected-modules</td><td>general quantitative reporting, experimental design reporting, random assignment reporting</td><td>Quantitative controlled or comparative studies</td></tr><tr><td>TOP_GUIDELINES_2015</td><td>Transparency and Openness Promotion Guidelines</td><td>2015</td><td>openness-guideline</td><td>selected-modules</td><td>data transparency, materials transparency, preregistration signal</td><td>Open-data and open-materials signaling within the audit</td></tr></tbody></table><h3>Check-to-standard mapping</h3><table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr><th>Check</th><th>Standard refs</th></tr></thead><tbody><tr><td>quant_experimental.sample_size_present</td><td><ul><li><strong>APA_JARS_QUANT_2018</strong> (general quantitative reporting)</li></ul></td></tr><tr><td>quant_experimental.control_group_present</td><td><ul><li><strong>APA_JARS_QUANT_2018</strong> (experimental design reporting, random assignment reporting)</li></ul></td></tr><tr><td>quant_experimental.effect_size_reported</td><td><ul><li><strong>APA_JARS_QUANT_2018</strong> (general quantitative reporting)</li></ul></td></tr><tr><td>quant_experimental.ci_or_pvalue_reported</td><td><ul><li><strong>APA_JARS_QUANT_2018</strong> (general quantitative reporting)</li></ul></td></tr><tr><td>quant_experimental.raw_data_availability</td><td><ul><li><strong>TOP_GUIDELINES_2015</strong> (data transparency)</li></ul></td></tr><tr><td>quant_experimental.overclaiming_detected</td><td><ul><li><strong>APA_JARS_QUANT_2018</strong> (general quantitative reporting)</li></ul></td></tr></tbody></table></div>
+<div class='card trust-card'><h2>Issuer trust profile</h2><p><strong>Issuer mode:</strong> self_hosted</p><p><strong>Trust tier:</strong> self_hosted_non_audited_self_claim</p><p><strong>Repo matches stable release:</strong> false</p><p><strong>Working tree clean:</strong> unknown</p><p><strong>Release manifest signed:</strong> false</p><p><strong>Release signature verified:</strong> false</p><p><strong>Verifier chain present:</strong> false</p><p><strong>Verifier chain verified:</strong> false</p><p><strong>Release signing key id:</strong> <code>unknown</code></p><p><strong>Runtime commit:</strong> <code>unknown</code></p><p><strong>Release commit:</strong> <code>unknown</code></p><p><strong>Source tree hash:</strong> <code></code></p><p><strong>Release manifest hash:</strong> <code></code></p><p><strong>Red team certified:</strong> false</p><p><strong>External audit present:</strong> false</p><ul><li>None</li></ul></div>
+
+
+
+
+
+
+
+<div class='card'><h2>Execution plan</h2><p><strong>Attempt entries:</strong> 1</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr><th>Check</th><th>Attempt kind</th><th>Status</th><th>Provider</th><th>Identity</th><th>Repository</th><th>Next step</th></tr></thead><tbody><tr><td>quant_experimental.methods_length_signal</td><td>content-profiling</td><td>not_attempted</td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+<div class='card'><h2>Execution attempt log</h2><p><strong>Attempt records:</strong> 1</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr><th>Attempt id</th><th>Source check</th><th>Lifecycle</th><th>Executed</th><th>Provider</th><th>Identity</th><th>Command preview</th></tr></thead><tbody><tr><td>bundle-attempt-001</td><td>quant_experimental.methods_length_signal</td><td>skipped</td><td>false</td><td></td><td></td><td></td></tr></tbody></table></div>
+<div class='card'><h2>Execution receipts</h2><p><strong>Receipt records:</strong> 1</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr><th>Receipt id</th><th>Source attempt</th><th>Status</th><th>Mode</th><th>Executed</th><th>Return code</th><th>Produced files</th></tr></thead><tbody><tr><td>bundle-receipt-001</td><td>bundle-attempt-001</td><td>skipped</td><td>dry-run</td><td>false</td><td></td><td></td></tr></tbody></table></div>
+
+<h2>Checks</h2>
+<div class='check pass'><h3>quant_experimental.sample_size_present</h3><p><strong>Status:</strong> pass | <strong>Confidence:</strong> 0.90</p><p>Sample-size evidence found.</p><div class='runner-meta'><p><strong>Runner:</strong> pattern_check (<em>pattern</em>)</p><p><strong>Execution mode:</strong> deterministic</p><p><strong>Capabilities:</strong> evidence-spans, regex-signals, section-scoped</p><p><strong>Source:</strong> builtin</p></div><details><summary>Standard mapping</summary><ul><li><strong>APA_JARS_QUANT_2018</strong> | modules: general quantitative reporting | applicability: Sample-size disclosure for quantitative reports</li></ul></details><details><summary>Evidence</summary><ul><li><strong>methods+results</strong>: A total of N = 84 participants were randomly assigned to a sleep intervention group or a control</li></ul></details></div>
+<div class='check pass'><h3>quant_experimental.control_group_present</h3><p><strong>Status:</strong> pass | <strong>Confidence:</strong> 0.80</p><p>Control/comparison or randomization language found.</p><div class='runner-meta'><p><strong>Runner:</strong> pattern_check (<em>pattern</em>)</p><p><strong>Execution mode:</strong> deterministic</p><p><strong>Capabilities:</strong> evidence-spans, regex-signals, section-scoped</p><p><strong>Source:</strong> builtin</p></div><details><summary>Standard mapping</summary><ul><li><strong>APA_JARS_QUANT_2018</strong> | modules: experimental design reporting, random assignment reporting | applicability: Controlled/comparative design reporting</li></ul></details><details><summary>Evidence</summary><ul><li><strong>methods+results</strong>: gned to a sleep intervention group or a control group. The sample size was determined before data collection. Raw data and materials</li></ul></details></div>
+<div class='check pass'><h3>quant_experimental.effect_size_reported</h3><p><strong>Status:</strong> pass | <strong>Confidence:</strong> 0.85</p><p>Effect-size language found.</p><div class='runner-meta'><p><strong>Runner:</strong> pattern_check (<em>pattern</em>)</p><p><strong>Execution mode:</strong> deterministic</p><p><strong>Capabilities:</strong> evidence-spans, regex-signals, section-scoped</p><p><strong>Source:</strong> builtin</p></div><details><summary>Standard mapping</summary><ul><li><strong>APA_JARS_QUANT_2018</strong> | modules: general quantitative reporting | applicability: Effect size reporting in quantitative results</li></ul></details><details><summary>Evidence</summary><ul><li><strong>methods+results</strong>: terials are available on OSF. We report Cohen&#x27;s d and 95% CI for all primary outcomes.  Participants in the intervention group sh</li></ul></details></div>
+<div class='check pass'><h3>quant_experimental.ci_or_pvalue_reported</h3><p><strong>Status:</strong> pass | <strong>Confidence:</strong> 0.90</p><p>Inferential-statistics evidence found.</p><div class='runner-meta'><p><strong>Runner:</strong> pattern_check (<em>pattern</em>)</p><p><strong>Execution mode:</strong> deterministic</p><p><strong>Capabilities:</strong> evidence-spans, regex-signals, section-scoped</p><p><strong>Source:</strong> builtin</p></div><details><summary>Standard mapping</summary><ul><li><strong>APA_JARS_QUANT_2018</strong> | modules: general quantitative reporting | applicability: Inferential statistics reporting</li></ul></details><details><summary>Evidence</summary><ul><li><strong>methods+results</strong>: ervention group showed improved recall, p = 0.03, Cohen&#x27;s d = 0.42, 95% CI [0.10, 0.74].</li></ul></details></div>
+<div class='check warning'><h3>quant_experimental.raw_data_availability</h3><p><strong>Status:</strong> warning | <strong>Confidence:</strong> 0.55</p><p>Heuristic evidence provider found no decisive evidence in the available excerpt. Checked section scope: full_text.</p><div class='runner-meta'><p><strong>Runner:</strong> llm_evidence_check (<em>llm-assisted</em>)</p><p><strong>Execution mode:</strong> llm-assisted</p><p><strong>Capabilities:</strong> evidence-spans, heuristic-fallback, prompted-audit</p><p><strong>Source:</strong> builtin</p></div><details><summary>Standard mapping</summary><ul><li><strong>TOP_GUIDELINES_2015</strong> | modules: data transparency | applicability: Transparency signal for underlying data</li></ul></details><details><summary>Runner details</summary><pre>{
+  &quot;llm_domain&quot;: &quot;quant_experimental&quot;,
+  &quot;llm_provider&quot;: &quot;heuristic&quot;,
+  &quot;match_scope&quot;: &quot;full_text&quot;,
+  &quot;prompt_template&quot;: &quot;quant_experimental/raw_data.md&quot;
+}</pre></details></div>
+<div class='check pass'><h3>quant_experimental.overclaiming_detected</h3><p><strong>Status:</strong> pass | <strong>Confidence:</strong> 0.82</p><p>Heuristic evidence provider found supporting evidence for the configured check. Checked section scope: abstract, discussion.</p><div class='runner-meta'><p><strong>Runner:</strong> llm_interpretation_check (<em>llm-assisted</em>)</p><p><strong>Execution mode:</strong> llm-assisted</p><p><strong>Capabilities:</strong> evidence-spans, heuristic-fallback, interpretation-audit</p><p><strong>Source:</strong> builtin</p></div><details><summary>Standard mapping</summary><ul><li><strong>APA_JARS_QUANT_2018</strong> | modules: general quantitative reporting | applicability: Interpretive discipline aligned with reported results | notes: Auxiliary interpretive audit aligned to quantitative reporting scope</li></ul></details><details><summary>Runner details</summary><pre>{
+  &quot;llm_domain&quot;: &quot;quant_experimental&quot;,
+  &quot;llm_provider&quot;: &quot;heuristic&quot;,
+  &quot;match_scope&quot;: &quot;preferred&quot;,
+  &quot;prompt_template&quot;: &quot;quant_experimental/overclaiming.md&quot;
+}</pre></details><details><summary>Evidence</summary><ul><li><strong>excerpt</strong>: ondition.  These findings support the hypothesis that sleep may improve next-day recall in this task.</li></ul></details></div>
+<div class='check warning'><h3>quant_experimental.methods_length_signal</h3><p><strong>Status:</strong> warning | <strong>Confidence:</strong> 0.55</p><p>Methods section may be too short for a robust first-tier audit. Observed word count: 46.</p><div class='runner-meta'><p><strong>Runner:</strong> word_count_check (<em>plugin-example</em>)</p><p><strong>Execution mode:</strong> deterministic</p><p><strong>Capabilities:</strong> content-profiling, plugin, section-scoped</p><p><strong>Source:</strong> plugin | plugins.wordcount_plugin</p></div><details><summary>Runner details</summary><pre>{
+  &quot;attempt_kind&quot;: &quot;content-profiling&quot;,
+  &quot;attempt_status&quot;: &quot;not_attempted&quot;,
+  &quot;min_words&quot;: 80,
+  &quot;observed_word_count&quot;: 46
+}</pre></details><details><summary>Evidence</summary><ul><li><strong>methods</strong>: A total of N = 84 participants were randomly assigned to a sleep intervention group or a control group. The sample size was determined before data collection. Raw data and</li></ul></details></div>
+<div class='check warning'><h3>quant_experimental.reference_integrity</h3><p><strong>Status:</strong> warning | <strong>Confidence:</strong> 0.80</p><p>No explicit literature-reference trail was detected.</p><div class='runner-meta'><p><strong>Runner:</strong> reference_integrity_check (<em>references</em>)</p><p><strong>Execution mode:</strong> deterministic</p><p><strong>Capabilities:</strong> citation-signals, doi-url-richness, literature-audit, reference-section-detection</p><p><strong>Source:</strong> builtin</p></div><details><summary>Runner details</summary><pre>{
+  &quot;doi_count&quot;: 0,
+  &quot;in_text_citation_count&quot;: 0,
+  &quot;reference_count&quot;: 0,
+  &quot;references_section_name&quot;: null,
+  &quot;representative_references&quot;: [],
+  &quot;style_guess&quot;: null,
+  &quot;url_count&quot;: 0,
+  &quot;year_count&quot;: 0
+}</pre></details></div>
+</body>
+</html>

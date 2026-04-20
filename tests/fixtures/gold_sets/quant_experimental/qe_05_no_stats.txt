@@ -1,0 +1,11 @@
+Title: Descriptive-only comparative study
+Abstract
+The findings suggest a possible difference between groups.
+Methods
+Participants (N = 51) were assigned to a treatment group and a comparison group.
+Results
+The treatment group appeared higher than the comparison group, but no inferential statistic was reported.
+Discussion
+These findings may be consistent with the intervention account.
+References
+Patel, E. (2022). Example article.

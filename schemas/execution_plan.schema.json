@@ -1,0 +1,200 @@
+{
+  "$defs": {
+    "ExecutionAttemptEntry": {
+      "properties": {
+        "check_id": {
+          "title": "Check Id",
+          "type": "string"
+        },
+        "runner_type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Runner Type"
+        },
+        "runner_family": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Runner Family"
+        },
+        "execution_mode": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Execution Mode"
+        },
+        "status": {
+          "enum": [
+            "pass",
+            "warning",
+            "fail",
+            "not_applicable",
+            "error"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 0.5,
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "attempt_kind": {
+          "title": "Attempt Kind",
+          "type": "string"
+        },
+        "attempt_status": {
+          "enum": [
+            "not_attempted",
+            "not_ready",
+            "preflight_incomplete",
+            "preflight_ready",
+            "ready_without_url",
+            "planned",
+            "attempted",
+            "succeeded",
+            "failed"
+          ],
+          "title": "Attempt Status",
+          "type": "string"
+        },
+        "repository_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Repository Url"
+        },
+        "repository_provider": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Repository Provider"
+        },
+        "candidate_urls": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Candidate Urls",
+          "type": "array"
+        },
+        "detected_signals": {
+          "additionalProperties": {
+            "type": "boolean"
+          },
+          "title": "Detected Signals",
+          "type": "object"
+        },
+        "preflight_command": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Preflight Command"
+        },
+        "next_step": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Next Step"
+        }
+      },
+      "required": [
+        "check_id",
+        "status",
+        "attempt_kind",
+        "attempt_status"
+      ],
+      "title": "ExecutionAttemptEntry",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "artifact_version": {
+      "default": "0.1.0",
+      "title": "Artifact Version",
+      "type": "string"
+    },
+    "bundle_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bundle Id"
+    },
+    "doc_hash": {
+      "title": "Doc Hash",
+      "type": "string"
+    },
+    "domain": {
+      "title": "Domain",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "entries": {
+      "items": {
+        "$ref": "#/$defs/ExecutionAttemptEntry"
+      },
+      "title": "Entries",
+      "type": "array"
+    }
+  },
+  "required": [
+    "doc_hash",
+    "domain"
+  ],
+  "title": "ExecutionPlanArtifact",
+  "type": "object"
+}

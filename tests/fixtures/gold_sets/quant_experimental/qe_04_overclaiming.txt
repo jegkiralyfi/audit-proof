@@ -1,0 +1,11 @@
+Title: Strong claims paper
+Abstract
+The intervention proves that people become more cooperative.
+Methods
+Participants (N = 72) were randomly assigned to experimental and control conditions.
+Results
+Groups differed, p = 0.01.
+Discussion
+The intervention proves that the mechanism causes durable prosocial change in all populations.
+References
+Garcia, D. (2018). Example article.

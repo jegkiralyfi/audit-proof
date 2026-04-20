@@ -1,0 +1,112 @@
+domain: formal_proof
+certification_type: formal_proof_semantic_load_audit
+scope_label: Semantic load-bearingness audit for theorem-prover artifacts, with explicit distinction between formal validity and mathematical dependency elimination
+tier: semantics-proof-closure
+authority_note: Theorem prover acceptance is treated as formal validity only, not by itself as evidence of mathematical substance.
+policy_version: formal-proof-v0.6
+
+declared_standards:
+  - id: POT_FORMAL_PROOF_V0_6
+    label: Proof of Thought formal-proof semantic closure standard
+    version: "0.6"
+    standard_family: internal-methodology
+    declaration_mode: full
+    modules:
+      - formal validity vs semantic closure
+      - semantic placeholder exclusion
+      - dependency elimination doctrine
+      - theorem-surface honesty
+      - build-clean vs content-complete distinction
+    applicability: Lean or theorem-prover artifacts submitted for Proof of Thought style methodological audit
+
+certification_lanes:
+  - proof
+  - semantics
+  - methodology
+
+checks:
+  - id: no_explicit_placeholder_holes
+    required: true
+    type: formal_semantic_audit_check
+    params:
+      count_labels: [SORRY, ADMIT, AXIOM_NO_REF]
+      fail_if_count_gt: 0
+      evidence_limit: 3
+      semantic_rule: explicit-placeholder-exclusion
+      note_on_pass: No explicit proof holes or uncited axioms were detected in the submitted artifact.
+      note_on_fail: Explicit proof holes, admitted steps, or uncited axioms were detected. A clean theorem-prover narrative cannot be treated as strong Proof of Thought while these remain on the dependency path.
+    standard_refs:
+      - standard_id: POT_FORMAL_PROOF_V0_6
+        modules: [semantic placeholder exclusion, formal validity vs semantic closure]
+        applicability: Excludes obvious proof holes from strong PoT certification
+
+  - id: no_vacuous_true_markers
+    required: true
+    type: formal_semantic_audit_check
+    params:
+      count_labels: [TRUE_FAKE, TYPE_TRUE, TRUE_INTRO, TRIVIAL, EMPTY_PROP]
+      fail_if_count_gt: 0
+      evidence_limit: 4
+      semantic_rule: vacuous-proposition-exclusion
+      note_on_pass: No vacuous True-based marker propositions or empty Prop fields were detected in the submitted artifact.
+      note_on_fail: Vacuous proposition markers were detected. This means the artifact may compile while carrying little or no mathematical load on the affected path.
+    standard_refs:
+      - standard_id: POT_FORMAL_PROOF_V0_6
+        modules: [semantic placeholder exclusion, theorem-surface honesty]
+        applicability: Prevents build-clean but semantically empty closure from being misread as proof completion
+
+  - id: semantic_load_floor
+    required: true
+    type: formal_semantic_audit_check
+    params:
+      min_content_score: 50
+      warning_content_score_below: 75
+      semantic_rule: semantic-load-floor
+      content_fail_note: The artifact looks too semantically thin for strong Proof of Thought. Build-clean and content-complete are not the same state.
+      content_warning_note: The artifact may still be surface-heavy or scaffold-heavy relative to its visible mathematical content.
+      on_pass_status: pass
+      on_pass_confidence: 0.75
+    standard_refs:
+      - standard_id: POT_FORMAL_PROOF_V0_6
+        modules: [dependency elimination doctrine, build-clean vs content-complete distinction]
+        applicability: Requires evidence of substantive formal content beyond syntactic acceptance
+
+  - id: cited_axiom_boundary_notice
+    required: false
+    type: formal_semantic_audit_check
+    params:
+      count_labels: [AXIOM_CITED]
+      warning_if_count_gt: 0
+      evidence_limit: 2
+      semantic_rule: cited-boundary-notice
+      note_on_pass: No cited axiom boundary was detected in the submitted artifact.
+      note_on_warning: Cited axioms were detected. This may still be methodologically honest, but the artifact remains conditionally closed rather than internally complete.
+    standard_refs:
+      - standard_id: POT_FORMAL_PROOF_V0_6
+        modules: [formal validity vs semantic closure]
+        applicability: Distinguishes conditional closure from internal closure
+
+  - id: theorem_surface_pressure
+    required: false
+    type: formal_semantic_audit_check
+    params:
+      count_labels: [SURFACE_TERM]
+      warning_if_count_gt: 8
+      evidence_limit: 3
+      semantic_rule: anti-castle-surface-pressure
+      note_on_pass: No elevated theorem-surface / wrapper pressure signal was detected from naming patterns alone.
+      note_on_warning: Surface-oriented naming pressure is elevated. This does not prove dummy closure, but it raises the anti-castle risk and should trigger human review.
+    standard_refs:
+      - standard_id: POT_FORMAL_PROOF_V0_6
+        modules: [theorem-surface honesty, dependency elimination doctrine]
+        applicability: Human-review trigger for wrapper / surface overgrowth risk
+
+issuance_rules:
+  fail_if:
+    - no_explicit_placeholder_holes == fail
+    - no_vacuous_true_markers == fail
+    - semantic_load_floor == fail
+  warning_if:
+    - cited_axiom_boundary_notice == warning
+    - theorem_surface_pressure == warning
+    - semantic_load_floor == warning

@@ -1,0 +1,17 @@
+Title: Local evaluation sample
+
+Abstract
+We conducted a randomized controlled study with a sample size of 120 participants (n = 120).
+
+Methods
+Participants were randomly assigned to intervention and control groups.
+Raw data are available at https://example.org/data and the materials are available on request.
+
+Results
+We observed Cohen's d = 0.42, p = 0.03, 95% CI [0.10, 0.74].
+
+Discussion
+The intervention improved the outcome in this sample.
+
+References
+Smith, J. (2020). Example reference. https://doi.org/10.1000/example

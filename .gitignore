@@ -1,0 +1,20 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+*.pyc
+*.log
+/tmp/
+artifacts/
+
+# Local generated artifact bundles and evaluation outputs
+.artifacts/
+/.artifacts/
+.artifacts/**
+
+# Local signing material and derived trust artifacts
+keys/release_signing_private_key.pem
+release_manifest.signature.json
+release_verification.json
+
+keys/release_signing_private_key.pem

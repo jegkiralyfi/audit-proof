@@ -1,0 +1,9 @@
+Title: Preregistered but closed data
+Methods
+Participants (N = 77) were randomly assigned to two groups. The study was preregistered.
+Results
+The treatment effect was significant, p = 0.03.
+Discussion
+These findings suggest a tentative improvement.
+References
+Doe, J. (2016). Example. https://doi.org/10.1000/example19

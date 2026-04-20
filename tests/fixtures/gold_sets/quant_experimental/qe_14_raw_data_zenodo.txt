@@ -1,0 +1,9 @@
+Title: Zenodo data deposit
+Methods
+The sample size was 110 participants and a comparison group was included. Raw data are deposited at Zenodo (doi:10.5281/zenodo.7654321).
+Results
+The comparison was statistically significant, p = 0.01, odds ratio = 1.8.
+Discussion
+These findings suggest a robust but bounded improvement.
+References
+Doe, J. (2019). Example. https://doi.org/10.1000/example14

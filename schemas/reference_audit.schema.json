@@ -1,0 +1,136 @@
+{
+  "$defs": {
+    "ReferenceAuditEntry": {
+      "properties": {
+        "source_check_id": {
+          "title": "Source Check Id",
+          "type": "string"
+        },
+        "status": {
+          "default": "no_references_detected",
+          "enum": [
+            "no_references_detected",
+            "references_detected",
+            "references_and_citations_detected",
+            "metadata_rich"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "references_section_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "References Section Name"
+        },
+        "reference_count": {
+          "default": 0,
+          "title": "Reference Count",
+          "type": "integer"
+        },
+        "in_text_citation_count": {
+          "default": 0,
+          "title": "In Text Citation Count",
+          "type": "integer"
+        },
+        "doi_count": {
+          "default": 0,
+          "title": "Doi Count",
+          "type": "integer"
+        },
+        "url_count": {
+          "default": 0,
+          "title": "Url Count",
+          "type": "integer"
+        },
+        "year_count": {
+          "default": 0,
+          "title": "Year Count",
+          "type": "integer"
+        },
+        "style_guess": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Style Guess"
+        },
+        "representative_references": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Representative References",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source_check_id"
+      ],
+      "title": "ReferenceAuditEntry",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "artifact_version": {
+      "default": "0.1.0",
+      "title": "Artifact Version",
+      "type": "string"
+    },
+    "bundle_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bundle Id"
+    },
+    "doc_hash": {
+      "title": "Doc Hash",
+      "type": "string"
+    },
+    "domain": {
+      "title": "Domain",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "entries": {
+      "items": {
+        "$ref": "#/$defs/ReferenceAuditEntry"
+      },
+      "title": "Entries",
+      "type": "array"
+    }
+  },
+  "required": [
+    "doc_hash",
+    "domain"
+  ],
+  "title": "ReferenceAuditArtifact",
+  "type": "object"
+}

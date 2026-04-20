@@ -1,0 +1,11 @@
+Title: Omitted sample report
+Abstract
+The results suggest a small but potentially meaningful difference.
+Methods
+Participants were randomly assigned to a control group and an intervention group. Materials are available upon request.
+Results
+The intervention group outperformed the control group, p = 0.02, 95% CI [0.10, 0.60], Cohen's d = 0.35.
+Discussion
+The findings may indicate an effect that should be replicated.
+References
+Lee, C. (2019). Example article.

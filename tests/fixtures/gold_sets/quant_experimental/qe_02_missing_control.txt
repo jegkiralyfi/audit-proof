@@ -1,0 +1,11 @@
+Title: Comparative classroom survey
+Abstract
+This study may be associated with different outcomes across conditions.
+Methods
+Participants (N = 60) completed two survey blocks in sequence. We compared outcomes across the observed conditions.
+Results
+A difference was observed, p = 0.04, 95% CI [0.01, 0.40].
+Discussion
+The pattern may reflect a context-sensitive association.
+References
+Jones, B. (2020). Example article.

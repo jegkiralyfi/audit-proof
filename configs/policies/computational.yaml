@@ -1,0 +1,206 @@
+domain: computational
+certification_type: computational_reproducibility_preflight
+scope_label: Computational reproducibility preflight for code-backed research objects
+declared_standards:
+- id: FAIR_GUIDING_PRINCIPLES_2016
+  label: FAIR Guiding Principles for scientific data management and stewardship
+  version: '2016'
+  standard_family: data-stewardship-guideline
+  declaration_mode: selected-principles
+  modules:
+  - F1 persistent identifiers
+  - F2 rich metadata
+  - F3 identifier linkage
+  - F4 searchable registration
+  - R1 rich descriptions for reuse
+  applicability: Metadata and artifact discoverability in computational research objects
+- id: TOP_GUIDELINES_2015
+  label: Transparency and Openness Promotion Guidelines
+  version: '2015'
+  standard_family: openness-guideline
+  declaration_mode: selected-modules
+  modules:
+  - data transparency
+  - code or materials transparency
+  applicability: Open artifact signaling within computational reproducibility preflight
+certification_lanes:
+- execution
+- references
+tier: reproducibility-check
+policy_version: computational-v0.2
+checks:
+- id: reproducibility_artifact_linked
+  required: true
+  type: computational_signal_check
+  params:
+    search_scope: full_text
+    preferred_sections:
+    - methods
+    - materials and methods
+    - code availability
+    - data availability
+    - supplementary materials
+    - references
+    required_groups:
+    - code_location
+    signal_groups:
+      code_location:
+      - github\.com/
+      - gitlab\.com/
+      - bitbucket\.org/
+      - osf\.io/
+      - zenodo\.org/
+      - figshare\.com/
+      - softwareheritage\.org/
+      - \bcode availability\b
+      - \bsource code\b
+      - \brepository\b
+    min_optional_groups_for_pass: 0
+    min_optional_groups_for_warning: 0
+    note_on_pass: Computational artifact or repository location was detected.
+    note_on_fail: No clear code/repository/archive location was detected.
+  standard_refs:
+  - standard_id: FAIR_GUIDING_PRINCIPLES_2016
+    modules:
+    - F1 persistent identifiers
+    - F3 identifier linkage
+    - F4 searchable registration
+    applicability: Artifact discoverability and identifier linkage
+  - standard_id: TOP_GUIDELINES_2015
+    modules:
+    - code or materials transparency
+    applicability: Open artifact signaling
+- id: execution_context_declared
+  required: false
+  type: computational_signal_check
+  params:
+    preferred_sections:
+    - methods
+    - materials and methods
+    - supplementary materials
+    - full_text
+    search_scope: full_text
+    signal_groups:
+      environment_spec:
+      - requirements\.txt
+      - environment\.yml
+      - conda
+      - dockerfile
+      - container image
+      - software versions?
+      - python\s+3\.
+      - r\s+version
+    min_optional_groups_for_pass: 1
+    min_optional_groups_for_warning: 0
+    note_on_pass: An execution environment or dependency specification was detected.
+    note_on_warning: No explicit environment or dependency specification was detected.
+    on_warning_status: warning
+    on_fail_status: warning
+  standard_refs:
+  - standard_id: FAIR_GUIDING_PRINCIPLES_2016
+    modules:
+    - R1 rich descriptions for reuse
+    applicability: Environment/dependency context for reuse
+- id: rerun_instructions_present
+  required: false
+  type: computational_signal_check
+  params:
+    preferred_sections:
+    - methods
+    - materials and methods
+    - supplementary materials
+    - references
+    - full_text
+    search_scope: full_text
+    signal_groups:
+      rerun_instructions:
+      - \bto reproduce\b
+      - \breproduce the results\b
+      - \brun the script\b
+      - \bexecute the notebook\b
+      - \bworkflow\b
+      - \bcommand line\b
+      - \bmake all\b
+      - \bsnakemake\b
+    min_optional_groups_for_pass: 1
+    min_optional_groups_for_warning: 0
+    note_on_pass: Rerun or workflow instructions were detected.
+    note_on_warning: No explicit rerun instructions were detected.
+    on_warning_status: warning
+    on_fail_status: warning
+  standard_refs:
+  - standard_id: FAIR_GUIDING_PRINCIPLES_2016
+    modules:
+    - R1 rich descriptions for reuse
+    applicability: Operational instructions for rerun/reuse
+- id: repo2docker_readiness
+  required: false
+  type: repo2docker_check
+  params:
+    preferred_sections:
+    - methods
+    - materials and methods
+    - code availability
+    - data availability
+    - supplementary materials
+    - full_text
+    search_scope: full_text
+    artifact_patterns:
+    - github\.com/
+    - gitlab\.com/
+    - zenodo\.org/
+    - osf\.io/
+    - figshare\.com/
+    - softwareheritage\.org/
+    environment_patterns:
+    - requirements\.txt
+    - environment\.yml
+    - Dockerfile
+    - runtime\.txt
+    - pyproject\.toml
+    - binder
+    - repo2docker
+    execution_patterns:
+    - jupyter notebook
+    - run the script
+    - execute the notebook
+    - snakemake
+    - make all
+    - python main\.py
+    note_on_pass: The paper advertises enough execution metadata for a future repo2docker
+      lane.
+    note_on_warning: The paper advertises part of an execution trail, but repo2docker
+      readiness is incomplete.
+    note_on_fail: The paper does not yet advertise enough execution metadata for repo2docker
+      readiness.
+    on_warning_status: warning
+    on_fail_status: warning
+  standard_refs:
+  - standard_id: FAIR_GUIDING_PRINCIPLES_2016
+    modules:
+    - F2 rich metadata
+    - R1 rich descriptions for reuse
+    applicability: Execution preflight readiness metadata
+  - standard_id: TOP_GUIDELINES_2015
+    modules:
+    - code or materials transparency
+    applicability: Execution-oriented artifact openness signal
+- id: reference_integrity
+  required: false
+  type: reference_integrity_check
+  params:
+    min_references_for_pass: 3
+    min_in_text_citations_for_pass: 1
+    note_on_pass: A plausible literature-reference trail was detected.
+    note_on_warning: References were detected, but the literature trail looks incomplete.
+    note_on_fail: No explicit literature-reference trail was detected.
+    on_warning_status: warning
+    on_fail_status: warning
+issuance_rules:
+  fail_if:
+  - reproducibility_artifact_linked == fail
+  warning_if:
+  - reference_integrity == warning
+  - repo2docker_readiness == warning
+  - execution_context_declared == warning
+  - rerun_instructions_present == warning

@@ -1,0 +1,9 @@
+Title: Eta squared example
+Methods
+A comparison group design was used with 102 participants.
+Results
+The effect reached significance, p = 0.02, eta2 = 0.08.
+Discussion
+The result suggests a modest but non-trivial effect.
+References
+Doe, J. (2017). Example. https://doi.org/10.1000/example18

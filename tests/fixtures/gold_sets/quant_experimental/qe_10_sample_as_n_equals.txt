@@ -1,0 +1,9 @@
+Title: n-equals sample disclosure
+Methods
+Participants (n = 58) were assigned to a placebo condition or an active condition.
+Results
+The active condition differed from placebo, p = 0.02.
+Discussion
+The result may reflect a small advantage.
+References
+Doe, J. (2021). Example. https://doi.org/10.1000/example10

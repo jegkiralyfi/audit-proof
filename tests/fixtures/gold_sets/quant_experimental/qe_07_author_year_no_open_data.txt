@@ -1,0 +1,12 @@
+Title: Classroom comparison study
+Abstract
+This study suggests differences across instructional conditions.
+Methods
+Participants (N = 93) were randomly assigned to an active condition or a comparison group.
+Results
+A group difference was observed, p = 0.02, Cohen's d = 0.31.
+Discussion
+These findings may indicate a context-sensitive effect.
+References
+Miller, T., & Chen, R. (2021). Example source.
+Taylor, J. (2019). Another source.

@@ -1,0 +1,11 @@
+Title: Effect-size only report
+Abstract
+The pattern is consistent with an intervention benefit.
+Methods
+Participants (N = 66) were assigned to treatment and control conditions.
+Results
+The estimated difference was moderate, Cohen's d = 0.44.
+Discussion
+These findings may be consistent with an intervention effect, but further work is needed.
+References
+Nguyen, K. (2023). Example source. https://doi.org/10.1000/example.doi

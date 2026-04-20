@@ -1,0 +1,9 @@
+Title: URL-only open data signal
+Methods
+The study included 68 participants with a comparison group. Data availability: https://figshare.com/articles/dataset/example23/1234567
+Results
+The effect was significant, p = 0.02.
+Discussion
+These findings suggest a limited improvement.
+References
+Doe, J. (2012). Example. https://doi.org/10.1000/example23

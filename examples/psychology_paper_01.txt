@@ -1,0 +1,13 @@
+Example Study on Sleep and Memory
+
+Abstract
+We studied whether sleep improves next-day recall. Participants completed a short memory task after either a sleep intervention or a control condition.
+
+Methods
+A total of N = 84 participants were randomly assigned to a sleep intervention group or a control group. The sample size was determined before data collection. Raw data and materials are available on OSF. We report Cohen's d and 95% CI for all primary outcomes.
+
+Results
+Participants in the intervention group showed improved recall, p = 0.03, Cohen's d = 0.42, 95% CI [0.10, 0.74].
+
+Discussion
+These findings support the hypothesis that sleep may improve next-day recall in this task.

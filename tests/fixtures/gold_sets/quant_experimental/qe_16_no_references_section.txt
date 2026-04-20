@@ -1,0 +1,7 @@
+Title: No references heading
+Methods
+Participants (N = 54) were assigned to a control condition and an intervention condition.
+Results
+The contrast was significant, p = 0.03.
+Discussion
+These findings suggest a possible effect.

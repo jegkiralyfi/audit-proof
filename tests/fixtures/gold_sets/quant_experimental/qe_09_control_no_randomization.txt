@@ -1,0 +1,9 @@
+Title: Controlled comparison study
+Methods
+A control group and an intervention group completed the same outcome battery. The final sample size was 96 participants.
+Results
+The intervention group outperformed the control group, p = 0.04.
+Discussion
+These findings suggest a limited benefit under the study conditions.
+References
+Doe, J. (2020). Example. https://doi.org/10.1000/example9

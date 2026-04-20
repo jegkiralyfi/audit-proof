@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AuditProofEvidence",
+  "type": "object",
+  "properties": {
+    "section": {"type": "string"},
+    "quote": {"type": "string"},
+    "offset_start": {"type": "integer"},
+    "offset_end": {"type": "integer"}
+  }
+}

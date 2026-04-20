@@ -1,0 +1,169 @@
+{
+  "$defs": {
+    "ExecutionAttemptRecord": {
+      "properties": {
+        "attempt_id": {
+          "title": "Attempt Id",
+          "type": "string"
+        },
+        "source_check_id": {
+          "title": "Source Check Id",
+          "type": "string"
+        },
+        "attempt_kind": {
+          "title": "Attempt Kind",
+          "type": "string"
+        },
+        "attempt_status": {
+          "enum": [
+            "not_attempted",
+            "not_ready",
+            "preflight_incomplete",
+            "preflight_ready",
+            "ready_without_url",
+            "planned",
+            "attempted",
+            "succeeded",
+            "failed"
+          ],
+          "title": "Attempt Status",
+          "type": "string"
+        },
+        "lifecycle_status": {
+          "enum": [
+            "blocked",
+            "queued_stub",
+            "skipped",
+            "executed_stub"
+          ],
+          "title": "Lifecycle Status",
+          "type": "string"
+        },
+        "executed": {
+          "default": false,
+          "title": "Executed",
+          "type": "boolean"
+        },
+        "command_preview": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Command Preview"
+        },
+        "repository_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Repository Url"
+        },
+        "repository_provider": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Repository Provider"
+        },
+        "rationale": {
+          "default": "",
+          "title": "Rationale",
+          "type": "string"
+        },
+        "next_step": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Next Step"
+        },
+        "generated_at": {
+          "format": "date-time",
+          "title": "Generated At",
+          "type": "string"
+        },
+        "log_lines": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Log Lines",
+          "type": "array"
+        }
+      },
+      "required": [
+        "attempt_id",
+        "source_check_id",
+        "attempt_kind",
+        "attempt_status",
+        "lifecycle_status"
+      ],
+      "title": "ExecutionAttemptRecord",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "artifact_version": {
+      "default": "0.1.0",
+      "title": "Artifact Version",
+      "type": "string"
+    },
+    "bundle_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bundle Id"
+    },
+    "doc_hash": {
+      "title": "Doc Hash",
+      "type": "string"
+    },
+    "domain": {
+      "title": "Domain",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "attempts": {
+      "items": {
+        "$ref": "#/$defs/ExecutionAttemptRecord"
+      },
+      "title": "Attempts",
+      "type": "array"
+    }
+  },
+  "required": [
+    "doc_hash",
+    "domain"
+  ],
+  "title": "ExecutionAttemptsArtifact",
+  "type": "object"
+}

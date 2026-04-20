@@ -1,0 +1,11 @@
+Title: Open materials study
+Abstract
+The results suggest a small difference between conditions.
+Methods
+Participants (N = 110) were randomly assigned to a treatment group or control group. Materials and anonymized data are available in the supplementary repository and on OSF.
+Results
+The treatment group differed from control, p = 0.048, 95% CI [0.02, 0.55], Hedges g = 0.28.
+Discussion
+These findings suggest a modest but uncertain effect that should be replicated.
+References
+Adams, P. (2020). Example article.

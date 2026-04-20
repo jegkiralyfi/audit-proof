@@ -1,0 +1,9 @@
+Title: CI only report
+Methods
+The study enrolled 72 participants and used a comparison group.
+Results
+The mean difference was 0.41 with a 95% CI [0.08, 0.73].
+Discussion
+The findings suggest a modest association.
+References
+Doe, J. (2022). Example. https://doi.org/10.1000/example11

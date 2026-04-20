@@ -1,0 +1,598 @@
+{
+  "artifact_references": [
+    {
+      "artifact_name": "certificate",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "certificate.json",
+      "role": "certificate"
+    },
+    {
+      "artifact_name": "report",
+      "generated_by": "audit-proof",
+      "media_type": "text/html",
+      "optional": false,
+      "path": "report.html",
+      "role": "human-readable-report"
+    },
+    {
+      "artifact_name": "document",
+      "generated_by": "audit-proof",
+      "media_type": "text/plain",
+      "optional": false,
+      "path": "document.txt",
+      "role": "normalized-document"
+    },
+    {
+      "artifact_name": "rocrate",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "ro-crate-metadata.json",
+      "role": "provenance-package"
+    },
+    {
+      "artifact_name": "manifest",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "manifest.json",
+      "role": "bundle-manifest"
+    },
+    {
+      "artifact_name": "attestation",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "attestation.json",
+      "role": "bundle-attestation"
+    },
+    {
+      "artifact_name": "artifact_bindings",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "artifact_bindings.json",
+      "role": "artifact-hash-bindings"
+    },
+    {
+      "artifact_name": "build_provenance",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "build_provenance.json",
+      "role": "build-provenance"
+    },
+    {
+      "artifact_name": "execution_plan",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "execution_plan.json",
+      "role": "execution-plan"
+    },
+    {
+      "artifact_name": "execution_attempts",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "execution_attempts.json",
+      "role": "execution-attempt-log"
+    },
+    {
+      "artifact_name": "execution_receipts",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "execution_receipts.json",
+      "role": "execution-receipt-log"
+    },
+    {
+      "artifact_name": "execution_stub_outputs",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "execution_stub_outputs.json",
+      "role": "execution-stub-output-log"
+    },
+    {
+      "artifact_name": "release_manifest",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "release_manifest.json",
+      "role": "source-release-manifest"
+    },
+    {
+      "artifact_name": "release_manifest_signature",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "release_manifest.signature.json",
+      "role": "release-manifest-signature"
+    },
+    {
+      "artifact_name": "release_verification",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "release_verification.json",
+      "role": "release-verification-record"
+    },
+    {
+      "artifact_name": "release_public_key",
+      "generated_by": "audit-proof",
+      "media_type": "application/x-pem-file",
+      "optional": false,
+      "path": "keys/release_signing_public_key.pem",
+      "role": "release-signing-public-key"
+    },
+    {
+      "artifact_name": "repository_metadata",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "repository_metadata.json",
+      "role": "repository-metadata-log"
+    },
+    {
+      "artifact_name": "reference_audit",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "reference_audit.json",
+      "role": "literature-reference-audit"
+    },
+    {
+      "artifact_name": "reference_resolution",
+      "generated_by": "audit-proof",
+      "media_type": "application/json",
+      "optional": false,
+      "path": "reference_resolution.json",
+      "role": "reference-doi-resolution"
+    }
+  ],
+  "cert_hash": "sha256:e6238e70b3f43b66ffd3959ab81b7d880d64c310f2e67bbddbd51ac1c6cf0483",
+  "certificate_version": "0.1.0",
+  "certification_profile": {
+    "certification_lanes": [
+      "execution",
+      "references"
+    ],
+    "certification_type": "computational_reproducibility_preflight",
+    "check_standard_index": {
+      "computational.execution_context_declared": [
+        {
+          "applicability": "Environment/dependency context for reuse",
+          "modules": [
+            "R1 rich descriptions for reuse"
+          ],
+          "notes": null,
+          "standard_id": "FAIR_GUIDING_PRINCIPLES_2016"
+        }
+      ],
+      "computational.repo2docker_readiness": [
+        {
+          "applicability": "Execution preflight readiness metadata",
+          "modules": [
+            "F2 rich metadata",
+            "R1 rich descriptions for reuse"
+          ],
+          "notes": null,
+          "standard_id": "FAIR_GUIDING_PRINCIPLES_2016"
+        },
+        {
+          "applicability": "Execution-oriented artifact openness signal",
+          "modules": [
+            "code or materials transparency"
+          ],
+          "notes": null,
+          "standard_id": "TOP_GUIDELINES_2015"
+        }
+      ],
+      "computational.reproducibility_artifact_linked": [
+        {
+          "applicability": "Artifact discoverability and identifier linkage",
+          "modules": [
+            "F1 persistent identifiers",
+            "F3 identifier linkage",
+            "F4 searchable registration"
+          ],
+          "notes": null,
+          "standard_id": "FAIR_GUIDING_PRINCIPLES_2016"
+        },
+        {
+          "applicability": "Open artifact signaling",
+          "modules": [
+            "code or materials transparency"
+          ],
+          "notes": null,
+          "standard_id": "TOP_GUIDELINES_2015"
+        }
+      ],
+      "computational.rerun_instructions_present": [
+        {
+          "applicability": "Operational instructions for rerun/reuse",
+          "modules": [
+            "R1 rich descriptions for reuse"
+          ],
+          "notes": null,
+          "standard_id": "FAIR_GUIDING_PRINCIPLES_2016"
+        }
+      ]
+    },
+    "declared_standards": [
+      {
+        "applicability": "Metadata and artifact discoverability in computational research objects",
+        "declaration_mode": "selected-principles",
+        "id": "FAIR_GUIDING_PRINCIPLES_2016",
+        "label": "FAIR Guiding Principles for scientific data management and stewardship",
+        "modules": [
+          "F1 persistent identifiers",
+          "F2 rich metadata",
+          "F3 identifier linkage",
+          "F4 searchable registration",
+          "R1 rich descriptions for reuse"
+        ],
+        "standard_family": "data-stewardship-guideline",
+        "version": "2016"
+      },
+      {
+        "applicability": "Open artifact signaling within computational reproducibility preflight",
+        "declaration_mode": "selected-modules",
+        "id": "TOP_GUIDELINES_2015",
+        "label": "Transparency and Openness Promotion Guidelines",
+        "modules": [
+          "data transparency",
+          "code or materials transparency"
+        ],
+        "standard_family": "openness-guideline",
+        "version": "2015"
+      }
+    ],
+    "scope_label": "Computational reproducibility preflight for code-backed research objects"
+  },
+  "checks_run": [
+    {
+      "check_id": "computational.reproducibility_artifact_linked",
+      "confidence": 0.86,
+      "details": {},
+      "evidence": [
+        {
+          "offset_end": 188,
+          "offset_start": 177,
+          "quote": "udy.  Methods Source code is available at https://github.com/example/toy-sim-study and archived at https://zenodo.org/record/1234567. Dependencies are declared i",
+          "section": "full_text"
+        }
+      ],
+      "notes": "Computational artifact or repository location was detected. Matched signal groups: code_location.",
+      "runner_metadata": {
+        "capabilities": [
+          "artifact-discovery",
+          "reproducibility-signals",
+          "section-scoped"
+        ],
+        "description": "Detects first-tier reproducibility signals in computational papers.",
+        "execution_mode": "deterministic",
+        "implementation": "packages.checks.runners.computational.ComputationalSignalCheckRunner",
+        "runner_family": "computational",
+        "runner_type": "computational_signal_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [
+        {
+          "applicability": "Artifact discoverability and identifier linkage",
+          "modules": [
+            "F1 persistent identifiers",
+            "F3 identifier linkage",
+            "F4 searchable registration"
+          ],
+          "notes": null,
+          "standard_id": "FAIR_GUIDING_PRINCIPLES_2016"
+        },
+        {
+          "applicability": "Open artifact signaling",
+          "modules": [
+            "code or materials transparency"
+          ],
+          "notes": null,
+          "standard_id": "TOP_GUIDELINES_2015"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "computational.execution_context_declared",
+      "confidence": 0.86,
+      "details": {},
+      "evidence": [
+        {
+          "offset_end": 306,
+          "offset_start": 290,
+          "quote": ".org/record/1234567. Dependencies are declared in requirements.txt and environment.yml. We also provide a Dockerfile and Binder configuration. To reproduce the result",
+          "section": "full_text"
+        }
+      ],
+      "notes": "An execution environment or dependency specification was detected. Matched signal groups: environment_spec.",
+      "runner_metadata": {
+        "capabilities": [
+          "artifact-discovery",
+          "reproducibility-signals",
+          "section-scoped"
+        ],
+        "description": "Detects first-tier reproducibility signals in computational papers.",
+        "execution_mode": "deterministic",
+        "implementation": "packages.checks.runners.computational.ComputationalSignalCheckRunner",
+        "runner_family": "computational",
+        "runner_type": "computational_signal_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [
+        {
+          "applicability": "Environment/dependency context for reuse",
+          "modules": [
+            "R1 rich descriptions for reuse"
+          ],
+          "notes": null,
+          "standard_id": "FAIR_GUIDING_PRINCIPLES_2016"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "computational.rerun_instructions_present",
+      "confidence": 0.86,
+      "details": {},
+      "evidence": [
+        {
+          "offset_end": 395,
+          "offset_start": 383,
+          "quote": "so provide a Dockerfile and Binder configuration. To reproduce the results, run the notebook in Jupyter or execute the workflow with `snakemake` followed by `pyth",
+          "section": "full_text"
+        }
+      ],
+      "notes": "Rerun or workflow instructions were detected. Matched signal groups: rerun_instructions.",
+      "runner_metadata": {
+        "capabilities": [
+          "artifact-discovery",
+          "reproducibility-signals",
+          "section-scoped"
+        ],
+        "description": "Detects first-tier reproducibility signals in computational papers.",
+        "execution_mode": "deterministic",
+        "implementation": "packages.checks.runners.computational.ComputationalSignalCheckRunner",
+        "runner_family": "computational",
+        "runner_type": "computational_signal_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [
+        {
+          "applicability": "Operational instructions for rerun/reuse",
+          "modules": [
+            "R1 rich descriptions for reuse"
+          ],
+          "notes": null,
+          "standard_id": "FAIR_GUIDING_PRINCIPLES_2016"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "computational.repo2docker_readiness",
+      "confidence": 0.82,
+      "details": {
+        "attempt_kind": "repo2docker-preflight",
+        "attempt_status": "preflight_ready",
+        "candidate_urls": [
+          "https://github.com/example/toy-sim-study",
+          "https://zenodo.org/record/1234567"
+        ],
+        "detected_signals": {
+          "artifact": true,
+          "environment": true,
+          "execution": true
+        },
+        "next_step": "execution-runner-can-attempt-build",
+        "preflight_command": "repo2docker https://github.com/example/toy-sim-study",
+        "repository_identity": "github:example/toy-sim-study",
+        "repository_provider": "github",
+        "repository_url": "https://github.com/example/toy-sim-study"
+      },
+      "evidence": [
+        {
+          "offset_end": 188,
+          "offset_start": 177,
+          "quote": "udy.  Methods Source code is available at https://github.com/example/toy-sim-study and archived at https://zenodo.org/record/1234567. Dependencies are declared in requirements.txt a",
+          "section": "full_text"
+        },
+        {
+          "offset_end": 306,
+          "offset_start": 290,
+          "quote": ".org/record/1234567. Dependencies are declared in requirements.txt and environment.yml. We also provide a Dockerfile and Binder configuration. To reproduce the results, run the notebook",
+          "section": "full_text"
+        },
+        {
+          "offset_end": 476,
+          "offset_start": 467,
+          "quote": "notebook in Jupyter or execute the workflow with `snakemake` followed by `python main.py`.  Results The reproduced figures match the reported outputs within tolerance.",
+          "section": "full_text"
+        }
+      ],
+      "notes": "The paper advertises enough execution metadata for a future repo2docker lane. Found artifact, environment, and execution signals.",
+      "runner_metadata": {
+        "capabilities": [
+          "artifact-discovery",
+          "execution-attempt-stub",
+          "execution-trail",
+          "plan-generation",
+          "repo2docker-readiness"
+        ],
+        "description": "Preflight execution-attempt stub for a future repo2docker-based lane.",
+        "execution_mode": "preflight-attempt",
+        "implementation": "packages.checks.runners.repo2docker.Repo2DockerCheckRunner",
+        "runner_family": "execution",
+        "runner_type": "repo2docker_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [
+        {
+          "applicability": "Execution preflight readiness metadata",
+          "modules": [
+            "F2 rich metadata",
+            "R1 rich descriptions for reuse"
+          ],
+          "notes": null,
+          "standard_id": "FAIR_GUIDING_PRINCIPLES_2016"
+        },
+        {
+          "applicability": "Execution-oriented artifact openness signal",
+          "modules": [
+            "code or materials transparency"
+          ],
+          "notes": null,
+          "standard_id": "TOP_GUIDELINES_2015"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "computational.reference_integrity",
+      "confidence": 0.8,
+      "details": {
+        "doi_count": 0,
+        "in_text_citation_count": 0,
+        "reference_count": 0,
+        "references_section_name": null,
+        "representative_references": [],
+        "style_guess": null,
+        "url_count": 0,
+        "year_count": 0
+      },
+      "evidence": [],
+      "notes": "No explicit literature-reference trail was detected.",
+      "runner_metadata": {
+        "capabilities": [
+          "citation-signals",
+          "doi-url-richness",
+          "literature-audit",
+          "reference-section-detection"
+        ],
+        "description": "First-tier literature-reference audit for references sections, in-text citations, and DOI/URL richness.",
+        "execution_mode": "deterministic",
+        "implementation": "packages.checks.runners.references.ReferenceIntegrityCheckRunner",
+        "runner_family": "references",
+        "runner_type": "reference_integrity_check",
+        "source_kind": "builtin",
+        "source_module": null
+      },
+      "standard_refs": [],
+      "status": "warning"
+    }
+  ],
+  "doc_hash": "sha256:5025c192e4b4607a5d872e193c3529efa235b747b383cbd9573d81b4a7cc14e3",
+  "doi": null,
+  "domain": "computational",
+  "issuance": {
+    "matched_fail_rules": [],
+    "matched_warning_rules": [
+      "reference_integrity == warning"
+    ],
+    "reasons": [],
+    "status": "issued_with_warnings",
+    "warnings": [
+      "Optional check reference_integrity returned warning.",
+      "Matched warning rule: reference_integrity == warning"
+    ]
+  },
+  "issuer_trust_profile": {
+    "build_provenance_present": true,
+    "container_digest": null,
+    "external_audit_present": false,
+    "issuer_mode": "self_hosted",
+    "notes": [
+      "Runtime source tree does not match release manifest source_tree_hash.",
+      "No local .git directory available; git cleanliness/commit checks are unavailable.",
+      "Trust tier downgraded because runtime source could not be matched to the current stable release manifest."
+    ],
+    "red_team_certified": false,
+    "release_channel": "stable",
+    "release_commit": null,
+    "release_manifest_hash": "sha256:155070a16e4217ab27bd5e5ebd60705c2095d7b1d85b319d5c73b55614e84ac0",
+    "release_manifest_signed": true,
+    "release_signature_key_id": "local-release-signing-key",
+    "release_signature_verified": true,
+    "release_tag": null,
+    "repo_matches_release": false,
+    "repo_url": null,
+    "runtime_commit": null,
+    "source_tree_hash": "sha256:dc54f85b45697585414f4e30318710533331290eae64f610534e99618b14c915",
+    "trust_tier": "self_hosted_non_audited_self_claim",
+    "verifier_chain_present": true,
+    "verifier_chain_verified": true,
+    "working_tree_clean": null
+  },
+  "notes": "Computational demo artifact generated from example fixture.",
+  "operational_profile": {
+    "capability_classes": [
+      "artifact-discovery",
+      "citation-signals",
+      "doi-url-richness",
+      "execution-attempt-stub",
+      "execution-trail",
+      "literature-audit",
+      "plan-generation",
+      "reference-section-detection",
+      "repo2docker-readiness",
+      "reproducibility-signals",
+      "section-scoped"
+    ],
+    "execution_modes": [
+      "deterministic",
+      "preflight-attempt"
+    ],
+    "optional_checks": 4,
+    "required_checks": 1,
+    "runner_families": [
+      "computational",
+      "execution",
+      "references"
+    ],
+    "runner_types": [
+      "computational_signal_check",
+      "reference_integrity_check",
+      "repo2docker_check"
+    ],
+    "source_kinds": [
+      "builtin"
+    ],
+    "source_modules": []
+  },
+  "prompt_injection_protection": "manual-only",
+  "provenance": {
+    "checker_bundle_version": "0.1.0",
+    "generated_at": "2026-03-23T14:30:15.206473Z",
+    "metadata_source": "example-fixture",
+    "model_version": "rule-based-v0",
+    "parser_version": "0.1.0",
+    "policy_version": "computational-v0.2",
+    "prompt_bundle_version": "promptless-v0"
+  },
+  "red_team_certified": false,
+  "sandbox_only": true,
+  "security_notice": "SANDBOX / PROTOTYPE ONLY \u2014 NOT RED TEAM CERTIFIED. Manual prompt-injection hardening only. Do not treat any certificate, artifact, report, or execution record as a hardened security boundary or production-grade validation guarantee.",
+  "summary": {
+    "errors": 0,
+    "failed": 0,
+    "not_applicable": 0,
+    "passed": 4,
+    "warnings": 1
+  },
+  "tier": "reproducibility-check",
+  "timestamp": "2026-03-23T14:30:15.206490Z",
+  "title": "Example computational paper"
+}

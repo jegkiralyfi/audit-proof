@@ -1,0 +1,9 @@
+Title: Supplementary data signal
+Methods
+The sample size was 93 participants with a control group. Supplementary data are provided in the online appendix.
+Results
+The comparison produced p = 0.01 and Hedges' g = 0.51.
+Discussion
+The findings suggest a moderate improvement.
+References
+Doe, J. (2015). Example. https://doi.org/10.1000/example20

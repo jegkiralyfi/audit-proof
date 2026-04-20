@@ -1,0 +1,9 @@
+Title: Magnitude language only
+Methods
+Eighty participants were randomly assigned to treatment and control groups.
+Results
+The treatment produced a meaningful practical difference, p = 0.01.
+Discussion
+These data suggest a moderate benefit.
+References
+Doe, J. (2023). Example. https://doi.org/10.1000/example12

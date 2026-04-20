@@ -1,0 +1,156 @@
+{
+  "$defs": {
+    "ReferenceResolutionEntry": {
+      "properties": {
+        "source_check_id": {
+          "title": "Source Check Id",
+          "type": "string"
+        },
+        "doi_original": {
+          "title": "Doi Original",
+          "type": "string"
+        },
+        "doi_normalized": {
+          "title": "Doi Normalized",
+          "type": "string"
+        },
+        "resolution_status": {
+          "default": "normalized_only",
+          "enum": [
+            "no_doi_detected",
+            "normalized_only",
+            "fetch_disabled",
+            "resolved",
+            "resolution_failed"
+          ],
+          "title": "Resolution Status",
+          "type": "string"
+        },
+        "reference_snippet": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reference Snippet"
+        },
+        "resolution_source": {
+          "default": "crossref",
+          "title": "Resolution Source",
+          "type": "string"
+        },
+        "crossref_title": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Crossref Title"
+        },
+        "crossref_journal": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Crossref Journal"
+        },
+        "crossref_published_year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Crossref Published Year"
+        },
+        "crossref_publisher": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Crossref Publisher"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source_check_id",
+        "doi_original",
+        "doi_normalized"
+      ],
+      "title": "ReferenceResolutionEntry",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "artifact_version": {
+      "default": "0.1.0",
+      "title": "Artifact Version",
+      "type": "string"
+    },
+    "bundle_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bundle Id"
+    },
+    "doc_hash": {
+      "title": "Doc Hash",
+      "type": "string"
+    },
+    "domain": {
+      "title": "Domain",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "entries": {
+      "items": {
+        "$ref": "#/$defs/ReferenceResolutionEntry"
+      },
+      "title": "Entries",
+      "type": "array"
+    }
+  },
+  "required": [
+    "doc_hash",
+    "domain"
+  ],
+  "title": "ReferenceResolutionArtifact",
+  "type": "object"
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Audit-Proof Certificate</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 2rem; max-width: 1100px; }
+.warning-banner { background: #7f1d1d; color: white; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; font-weight: bold; }
+.pass { border-left: 4px solid #2e7d32; padding-left: 1rem; margin-bottom: 1rem; }
+.warning { border-left: 4px solid #ed6c02; padding-left: 1rem; margin-bottom: 1rem; }
+.fail { border-left: 4px solid #d32f2f; padding-left: 1rem; margin-bottom: 1rem; }
+.not_applicable, .error { border-left: 4px solid #455a64; padding-left: 1rem; margin-bottom: 1rem; }
+code { background: #f3f3f3; padding: .1rem .3rem; }
+.card { background: #fafafa; border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; }
+.runner-meta { background: #fff; border: 1px dashed #ddd; padding: .6rem .8rem; margin: .75rem 0; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+</style>
+</head>
+<body>
+<div class='warning-banner'>SANDBOX ONLY · NOT RED TEAM CERTIFIED · MANUAL PROMPT-INJECTION GUARDRAILS<br/>SANDBOX / PROTOTYPE ONLY — NOT RED TEAM CERTIFIED. Manual prompt-injection hardening only. Do not treat any certificate, artifact, report, or execution record as a hardened security boundary or production-grade validation guarantee.<br/>VIEW ONLY — verify the signed JSON payload, artifact bindings, and build provenance before relying on this report.</div>
+<h1>Audit-Proof Certificate</h1>
+<p><strong>Title:</strong> Example computational paper</p>
+<p><strong>Domain:</strong> computational | <strong>Tier:</strong> reproducibility-check</p>
+<p><strong>Issuance:</strong> issued_with_warnings</p>
+<p><strong>Document hash:</strong> <code>sha256:5025c192e4b4607a5d872e193c3529efa235b747b383cbd9573d81b4a7cc14e3</code></p>
+<p><strong>Certificate hash:</strong> <code>sha256:2e3bd0c27f818e20d6b572201ace08cc1204050a9758ce6e8dd0d658b584e49a</code></p>
+<p><strong>Metadata source:</strong> example-fixture</p>
+<p><strong>Summary:</strong> 4 passed, 1 warnings, 0 failed, 0 errors</p>
+<div class='grid'>
+<div class='card'>
+<h2>Issuance decision</h2>
+<p><strong>Status:</strong> issued_with_warnings</p>
+<p><strong>Reasons:</strong></p>
+<ul><li>None</li></ul>
+<p><strong>Warnings:</strong></p>
+<ul><li>Optional check reference_integrity returned warning.</li><li>Matched warning rule: reference_integrity == warning</li></ul>
+</div>
+<div class='card'>
+<h2>Operational profile</h2>
+<p><strong>Policy version:</strong> computational-v0.2</p>
+<p><strong>Runner types:</strong> computational_signal_check, reference_integrity_check, repo2docker_check</p>
+<p><strong>Runner families:</strong> computational, execution, references</p>
+<p><strong>Capability classes:</strong> artifact-discovery, citation-signals, doi-url-richness, execution-attempt-stub, execution-trail, literature-audit, plan-generation, reference-section-detection, repo2docker-readiness, reproducibility-signals, section-scoped</p>
+<p><strong>Execution modes:</strong> deterministic, preflight-attempt</p>
+<p><strong>Source kinds:</strong> builtin</p>
+<p><strong>Source modules:</strong> none</p>
+<p><strong>Required / optional checks:</strong> 1 / 4</p>
+</div>
+</div>
+<div class='card'><h2>Certification profile</h2><p><strong>Certification type:</strong> computational_reproducibility_preflight</p><p><strong>Scope:</strong> Computational reproducibility preflight for code-backed research objects</p><p><strong>Lanes:</strong> execution, references</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr><th>ID</th><th>Standard</th><th>Version</th><th>Family</th><th>Declaration</th><th>Modules</th><th>Applicability</th></tr></thead><tbody><tr><td>FAIR_GUIDING_PRINCIPLES_2016</td><td>FAIR Guiding Principles for scientific data management and stewardship</td><td>2016</td><td>data-stewardship-guideline</td><td>selected-principles</td><td>F1 persistent identifiers, F2 rich metadata, F3 identifier linkage, F4 searchable registration, R1 rich descriptions for reuse</td><td>Metadata and artifact discoverability in computational research objects</td></tr><tr><td>TOP_GUIDELINES_2015</td><td>Transparency and Openness Promotion Guidelines</td><td>2015</td><td>openness-guideline</td><td>selected-modules</td><td>data transparency, code or materials transparency</td><td>Open artifact signaling within computational reproducibility preflight</td></tr></tbody></table><h3>Check-to-standard mapping</h3><table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr><th>Check</th><th>Standard refs</th></tr></thead><tbody><tr><td>computational.reproducibility_artifact_linked</td><td><ul><li><strong>FAIR_GUIDING_PRINCIPLES_2016</strong> (F1 persistent identifiers, F3 identifier linkage, F4 searchable registration)</li><li><strong>TOP_GUIDELINES_2015</strong> (code or materials transparency)</li></ul></td></tr><tr><td>computational.execution_context_declared</td><td><ul><li><strong>FAIR_GUIDING_PRINCIPLES_2016</strong> (R1 rich descriptions for reuse)</li></ul></td></tr><tr><td>computational.rerun_instructions_present</td><td><ul><li><strong>FAIR_GUIDING_PRINCIPLES_2016</strong> (R1 rich descriptions for reuse)</li></ul></td></tr><tr><td>computational.repo2docker_readiness</td><td><ul><li><strong>FAIR_GUIDING_PRINCIPLES_2016</strong> (F2 rich metadata, R1 rich descriptions for reuse)</li><li><strong>TOP_GUIDELINES_2015</strong> (code or materials transparency)</li></ul></td></tr></tbody></table></div>
+<div class='card trust-card'><h2>Issuer trust profile</h2><p><strong>Issuer mode:</strong> self_hosted</p><p><strong>Trust tier:</strong> self_hosted_non_audited_self_claim</p><p><strong>Repo matches stable release:</strong> false</p><p><strong>Working tree clean:</strong> unknown</p><p><strong>Release manifest signed:</strong> false</p><p><strong>Release signature verified:</strong> false</p><p><strong>Verifier chain present:</strong> false</p><p><strong>Verifier chain verified:</strong> false</p><p><strong>Release signing key id:</strong> <code>unknown</code></p><p><strong>Runtime commit:</strong> <code>unknown</code></p><p><strong>Release commit:</strong> <code>unknown</code></p><p><strong>Source tree hash:</strong> <code></code></p><p><strong>Release manifest hash:</strong> <code></code></p><p><strong>Red team certified:</strong> false</p><p><strong>External audit present:</strong> false</p><ul><li>None</li></ul></div>
+
+
+
+
+
+
+
+<div class='card'><h2>Execution plan</h2><p><strong>Attempt entries:</strong> 1</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr><th>Check</th><th>Attempt kind</th><th>Status</th><th>Provider</th><th>Identity</th><th>Repository</th><th>Next step</th></tr></thead><tbody><tr><td>computational.repo2docker_readiness</td><td>repo2docker-preflight</td><td>preflight_ready</td><td>github</td><td>github:example/toy-sim-study</td><td>https://github.com/example/toy-sim-study</td><td>execution-runner-can-attempt-build</td></tr></tbody></table></div>
+<div class='card'><h2>Execution attempt log</h2><p><strong>Attempt records:</strong> 1</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr><th>Attempt id</th><th>Source check</th><th>Lifecycle</th><th>Executed</th><th>Provider</th><th>Identity</th><th>Command preview</th></tr></thead><tbody><tr><td>bundle-attempt-001</td><td>computational.repo2docker_readiness</td><td>queued_stub</td><td>false</td><td>github</td><td></td><td>repo2docker https://github.com/example/toy-sim-study</td></tr></tbody></table></div>
+<div class='card'><h2>Execution receipts</h2><p><strong>Receipt records:</strong> 1</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'><thead><tr><th>Receipt id</th><th>Source attempt</th><th>Status</th><th>Mode</th><th>Executed</th><th>Return code</th><th>Produced files</th></tr></thead><tbody><tr><td>bundle-receipt-001</td><td>bundle-attempt-001</td><td>prepared</td><td>dry-run</td><td>false</td><td></td><td></td></tr></tbody></table></div>
+
+<h2>Checks</h2>
+<div class='check pass'><h3>computational.reproducibility_artifact_linked</h3><p><strong>Status:</strong> pass | <strong>Confidence:</strong> 0.86</p><p>Computational artifact or repository location was detected. Matched signal groups: code_location.</p><div class='runner-meta'><p><strong>Runner:</strong> computational_signal_check (<em>computational</em>)</p><p><strong>Execution mode:</strong> deterministic</p><p><strong>Capabilities:</strong> artifact-discovery, reproducibility-signals, section-scoped</p><p><strong>Source:</strong> builtin</p></div><details><summary>Standard mapping</summary><ul><li><strong>FAIR_GUIDING_PRINCIPLES_2016</strong> | modules: F1 persistent identifiers, F3 identifier linkage, F4 searchable registration | applicability: Artifact discoverability and identifier linkage</li><li><strong>TOP_GUIDELINES_2015</strong> | modules: code or materials transparency | applicability: Open artifact signaling</li></ul></details><details><summary>Evidence</summary><ul><li><strong>full_text</strong>: udy.  Methods Source code is available at https://github.com/example/toy-sim-study and archived at https://zenodo.org/record/1234567. Dependencies are declared i</li></ul></details></div>
+<div class='check pass'><h3>computational.execution_context_declared</h3><p><strong>Status:</strong> pass | <strong>Confidence:</strong> 0.86</p><p>An execution environment or dependency specification was detected. Matched signal groups: environment_spec.</p><div class='runner-meta'><p><strong>Runner:</strong> computational_signal_check (<em>computational</em>)</p><p><strong>Execution mode:</strong> deterministic</p><p><strong>Capabilities:</strong> artifact-discovery, reproducibility-signals, section-scoped</p><p><strong>Source:</strong> builtin</p></div><details><summary>Standard mapping</summary><ul><li><strong>FAIR_GUIDING_PRINCIPLES_2016</strong> | modules: R1 rich descriptions for reuse | applicability: Environment/dependency context for reuse</li></ul></details><details><summary>Evidence</summary><ul><li><strong>full_text</strong>: .org/record/1234567. Dependencies are declared in requirements.txt and environment.yml. We also provide a Dockerfile and Binder configuration. To reproduce the result</li></ul></details></div>
+<div class='check pass'><h3>computational.rerun_instructions_present</h3><p><strong>Status:</strong> pass | <strong>Confidence:</strong> 0.86</p><p>Rerun or workflow instructions were detected. Matched signal groups: rerun_instructions.</p><div class='runner-meta'><p><strong>Runner:</strong> computational_signal_check (<em>computational</em>)</p><p><strong>Execution mode:</strong> deterministic</p><p><strong>Capabilities:</strong> artifact-discovery, reproducibility-signals, section-scoped</p><p><strong>Source:</strong> builtin</p></div><details><summary>Standard mapping</summary><ul><li><strong>FAIR_GUIDING_PRINCIPLES_2016</strong> | modules: R1 rich descriptions for reuse | applicability: Operational instructions for rerun/reuse</li></ul></details><details><summary>Evidence</summary><ul><li><strong>full_text</strong>: so provide a Dockerfile and Binder configuration. To reproduce the results, run the notebook in Jupyter or execute the workflow with `snakemake` followed by `pyth</li></ul></details></div>
+<div class='check pass'><h3>computational.repo2docker_readiness</h3><p><strong>Status:</strong> pass | <strong>Confidence:</strong> 0.82</p><p>The paper advertises enough execution metadata for a future repo2docker lane. Found artifact, environment, and execution signals.</p><div class='runner-meta'><p><strong>Runner:</strong> repo2docker_check (<em>execution</em>)</p><p><strong>Execution mode:</strong> preflight-attempt</p><p><strong>Capabilities:</strong> artifact-discovery, execution-attempt-stub, execution-trail, plan-generation, repo2docker-readiness</p><p><strong>Source:</strong> builtin</p></div><details><summary>Standard mapping</summary><ul><li><strong>FAIR_GUIDING_PRINCIPLES_2016</strong> | modules: F2 rich metadata, R1 rich descriptions for reuse | applicability: Execution preflight readiness metadata</li><li><strong>TOP_GUIDELINES_2015</strong> | modules: code or materials transparency | applicability: Execution-oriented artifact openness signal</li></ul></details><details><summary>Runner details</summary><pre>{
+  &quot;attempt_kind&quot;: &quot;repo2docker-preflight&quot;,
+  &quot;attempt_status&quot;: &quot;preflight_ready&quot;,
+  &quot;candidate_urls&quot;: [
+    &quot;https://github.com/example/toy-sim-study&quot;,
+    &quot;https://zenodo.org/record/1234567&quot;
+  ],
+  &quot;detected_signals&quot;: {
+    &quot;artifact&quot;: true,
+    &quot;environment&quot;: true,
+    &quot;execution&quot;: true
+  },
+  &quot;next_step&quot;: &quot;execution-runner-can-attempt-build&quot;,
+  &quot;preflight_command&quot;: &quot;repo2docker https://github.com/example/toy-sim-study&quot;,
+  &quot;repository_identity&quot;: &quot;github:example/toy-sim-study&quot;,
+  &quot;repository_provider&quot;: &quot;github&quot;,
+  &quot;repository_url&quot;: &quot;https://github.com/example/toy-sim-study&quot;
+}</pre></details><details><summary>Evidence</summary><ul><li><strong>full_text</strong>: udy.  Methods Source code is available at https://github.com/example/toy-sim-study and archived at https://zenodo.org/record/1234567. Dependencies are declared in requirements.txt a</li><li><strong>full_text</strong>: .org/record/1234567. Dependencies are declared in requirements.txt and environment.yml. We also provide a Dockerfile and Binder configuration. To reproduce the results, run the notebook</li><li><strong>full_text</strong>: notebook in Jupyter or execute the workflow with `snakemake` followed by `python main.py`.  Results The reproduced figures match the reported outputs within tolerance.</li></ul></details></div>
+<div class='check warning'><h3>computational.reference_integrity</h3><p><strong>Status:</strong> warning | <strong>Confidence:</strong> 0.80</p><p>No explicit literature-reference trail was detected.</p><div class='runner-meta'><p><strong>Runner:</strong> reference_integrity_check (<em>references</em>)</p><p><strong>Execution mode:</strong> deterministic</p><p><strong>Capabilities:</strong> citation-signals, doi-url-richness, literature-audit, reference-section-detection</p><p><strong>Source:</strong> builtin</p></div><details><summary>Runner details</summary><pre>{
+  &quot;doi_count&quot;: 0,
+  &quot;in_text_citation_count&quot;: 0,
+  &quot;reference_count&quot;: 0,
+  &quot;references_section_name&quot;: null,
+  &quot;representative_references&quot;: [],
+  &quot;style_guess&quot;: null,
+  &quot;url_count&quot;: 0,
+  &quot;year_count&quot;: 0
+}</pre></details></div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+Title: Reproducing a toy simulation study
+
+Abstract
+We provide code and an execution recipe for rerunning the toy simulation study.
+
+Methods
+Source code is available at https://github.com/example/toy-sim-study and archived at https://zenodo.org/record/1234567.
+Dependencies are declared in requirements.txt and environment.yml. We also provide a Dockerfile and Binder configuration.
+To reproduce the results, run the notebook in Jupyter or execute the workflow with `snakemake` followed by `python main.py`.
+
+Results
+The reproduced figures match the reported outputs within tolerance.

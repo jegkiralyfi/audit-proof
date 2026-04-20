@@ -1,0 +1,9 @@
+Title: Relative risk example
+Methods
+The final sample included 140 participants and a comparison group.
+Results
+Relative risk = 1.45 and p = 0.04.
+Discussion
+The estimate suggests a moderate increase in probability.
+References
+Doe, J. (2018). Example. https://doi.org/10.1000/example17

@@ -1,0 +1,340 @@
+{
+  "cases": [
+    {
+      "case_id": "qe_01_good_controlled",
+      "title": "Controlled quantitative study with transparent reporting",
+      "file": "qe_01_good_controlled.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "pass",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_02_missing_control",
+      "title": "Comparative-sounding study without explicit control",
+      "file": "qe_02_missing_control.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "warning",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_03_missing_sample",
+      "title": "Study omitting sample size",
+      "file": "qe_03_missing_sample.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "fail",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_04_overclaiming",
+      "title": "Study with overclaiming discussion",
+      "file": "qe_04_overclaiming.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "warning"
+      }
+    },
+    {
+      "case_id": "qe_05_no_stats",
+      "title": "Study without inferential statistics",
+      "file": "qe_05_no_stats.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "fail",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_06_data_but_no_doi",
+      "title": "Open data signal without DOI in references",
+      "file": "qe_06_data_but_no_doi.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "pass",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_07_author_year_no_open_data",
+      "title": "Author-year references without open data signal",
+      "file": "qe_07_author_year_no_open_data.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_08_effect_without_pvalue",
+      "title": "Effect size reported without p-value or CI",
+      "file": "qe_08_effect_without_pvalue.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "fail",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_09_control_no_randomization",
+      "title": "Controlled comparison without explicit randomization",
+      "file": "qe_09_control_no_randomization.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_10_sample_as_n_equals",
+      "title": "Sample size reported as n equals",
+      "file": "qe_10_sample_as_n_equals.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_11_ci_without_pvalue",
+      "title": "Confidence interval without p-value",
+      "file": "qe_11_ci_without_pvalue.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_12_effect_size_language_only",
+      "title": "Effect size language without statistic",
+      "file": "qe_12_effect_size_language_only.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_13_open_materials_only",
+      "title": "Open materials without open data",
+      "file": "qe_13_open_materials_only.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_14_raw_data_zenodo",
+      "title": "Raw data shared on Zenodo",
+      "file": "qe_14_raw_data_zenodo.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "pass",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_15_strong_causal_claim",
+      "title": "Strong causal overclaim",
+      "file": "qe_15_strong_causal_claim.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "warning"
+      }
+    },
+    {
+      "case_id": "qe_16_no_references_section",
+      "title": "No explicit references section",
+      "file": "qe_16_no_references_section.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_17_relative_risk",
+      "title": "Relative risk as effect size",
+      "file": "qe_17_relative_risk.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_18_eta_squared",
+      "title": "Eta squared reporting",
+      "file": "qe_18_eta_squared.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_19_pre_registration_no_data",
+      "title": "Preregistration without data sharing",
+      "file": "qe_19_pre_registration_no_data.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_20_supplementary_data_signal",
+      "title": "Supplementary data signal",
+      "file": "qe_20_supplementary_data_signal.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "pass",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_21_missing_stats_but_effect",
+      "title": "Effect size without inferential stat",
+      "file": "qe_21_missing_stats_but_effect.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "pass",
+        "ci_or_pvalue_reported": "fail",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_22_missing_control_and_sample",
+      "title": "No control and no explicit sample size",
+      "file": "qe_22_missing_control_and_sample.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "fail",
+        "control_group_present": "warning",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_23_url_only_data_signal",
+      "title": "URL-only data availability signal",
+      "file": "qe_23_url_only_data_signal.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "pass",
+        "overclaiming_detected": "pass"
+      }
+    },
+    {
+      "case_id": "qe_24_definitive_language_in_abstract",
+      "title": "Definitive language in abstract",
+      "file": "qe_24_definitive_language_in_abstract.txt",
+      "domain": "quant_experimental",
+      "expected": {
+        "sample_size_present": "pass",
+        "control_group_present": "pass",
+        "effect_size_reported": "warning",
+        "ci_or_pvalue_reported": "pass",
+        "raw_data_availability": "warning",
+        "overclaiming_detected": "warning"
+      }
+    }
+  ]
+}
